@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+<div class="wrapper-wide flex flex-column flex-row-m">
+  <section class="service-container sp-10">
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+    <article class="fade-up service-summary">
+      <a href="{{ .Permalink }}" class="service-summary__link flow">
+        <div class="service-summary__image-wrap">
+          {{ $has_image := .Params.image }}
+          {{ if $has_image }}
+          <img src="{{ .Permalink }}{{ .Params.image }}" alt="" class="service-summary__img img-responsive zoom-images" width="640" height="360" loading="lazy">
+          {{ end }}
+        </div>
+        <div class="service-summary__content">
+          <h3 class="service-summary__title h4">{{ .Title }}</h3>
+          <p class="service-summary__summary">
+            {{ .Params.short_description }}
+          </p>
+          <span class="service-summary__read-more">
+            Learn More {{ partial "svg-icons/arrow-right.svg" . }}
+          </span>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </section>
+</div>
+{{ partial "cta" . }}
+{{ end }}

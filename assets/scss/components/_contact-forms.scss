@@ -1,0 +1,95 @@
+.contact-form-wrapper {
+  @include breakpoint(md) {
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+  }
+
+  @include breakpoint(lg) {
+    bottom: -200px;
+  }
+}
+
+.emergency-cta {
+  background-color: $primary-color;
+  color: $white;
+  padding: $ic-300;
+
+  @include breakpoint(lg) {
+    padding: $ic-300 $ic-600;
+  }
+
+  @include breakpoint(xl) {
+    padding: $ic-600;
+  }
+
+  a,
+  h2,
+  svg {
+    color: $white;
+    fill: $white;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+  svg {
+    width: $ic-400;
+    height: $ic-400;
+  }
+}
+
+.emergency-phone {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: $white;
+  padding: $ic-300;
+  box-shadow: 8px 8px 48px rgba(25, 25, 96, 0.25);
+
+  @include breakpoint(lg) {
+    padding: $ic-300 $ic-600;
+  }
+
+  @include breakpoint(xl) {
+    padding: $ic-600;
+  }
+
+  .contact-form__form-group label {
+    font-size: $ic-200;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  .contact-form__form-group input,
+  .contact-form__form-group textarea {
+    background-color: $light-gray;
+    border: none;
+    width: 100%;
+    padding: $ic-100 $ic-300;
+    margin-bottom: $ic-100;
+
+    &:focus {
+      outline: 1px solid $primary-color;
+    }
+  }
+
+  &__form-group input {
+    height: $ic-600;
+  }
+
+  &__form-group textarea {
+    height: $ic-700;
+  }
+
+  &__btn {
+    border: none;
+  }
+}
+
+.contact {
+  .contact-form {
+    height: 100%;
+  }
+}

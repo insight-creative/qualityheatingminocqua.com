@@ -1,0 +1,99 @@
+.full-width-featured {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $blue-overlay-95;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+    z-index: 2;
+    content: "";
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__col {
+    flex: 1;
+  }
+
+  &__col:last-of-type {
+    flex: 2;
+  }
+
+  &__col-content {
+    padding: $ic-300;
+  }
+
+  &__image {
+    max-width: 250px;
+    padding: $ic-200;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .authorized-dealer-logo {
+    max-width: 150px;
+    padding: 0 0 $ic-300 0;
+  }
+}
+
+.about {
+  .full-width-featured {
+    &::after {
+      background-color: $white-overlay;
+      background-image: none;
+    }
+
+    &__heading {
+      color: $primary-color;
+    }
+
+    &__underline {
+      background-color: $accent-color;
+    }
+
+    &__body {
+      color: $black;
+    }
+  }
+}
+
+.full-width-featured-reverse {
+  .full-width-featured__image {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+    img {
+      width: 50%;
+      padding: $ic-200;
+      max-width: 16rem;
+      height: 100%;
+    }
+  }
+}
+
+.home {
+  .full-width-featured__content {
+    color: $white;
+  }
+}

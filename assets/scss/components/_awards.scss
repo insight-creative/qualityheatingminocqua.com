@@ -1,0 +1,9 @@
+.awards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  img {
+    max-width: 8.5rem;
+    padding: $ic-200;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="site-cta padding-bottom-4 bg-gray">
+  <div class="bg-blue">
+    <div class="wrapper-wide padding-top-4 padding-bottom-4">
+      <div class="flex flex-column flex-row-m">
+        {{ partial "business-info" . }}
+      </div>
+    </div>
+  </div>
+    <div class="wrapper-wide padding-top-4 flex flex-column flex-row-m flex-center">
+      <div class="site-cta__wrapper w-100 w-60-m">
+        <h2 class="no-margin text-white">Contact {{ site.Params.author }}</h2>
+        <div class="underline white-underline"></div>
+        <p class="text-white">
+          We are committed to your comfort! That’s why we offer 24-hour, same-day service for urgent matters. For other inquiries or to speak with an expert regarding routine service, please reach out to our office. 
+        </p>
+      </div>
+      <div class="w-100 w-40-m">
+        {{ partial "footer-contact" . }}
+      </div>
+    </div>
+</div>

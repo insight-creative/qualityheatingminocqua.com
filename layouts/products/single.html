@@ -1,0 +1,75 @@
+{{ define "main" }}
+    <div class="single-product block">
+        <div class="wrapper-wide">
+            <div class="flex flex-column flex-row-m flex-center bg-gray padding-2">
+                <div class="w-100 w-60-m">
+                    {{ partial "breadcrumbs" . }}
+                    <h3 class="no-margin">{{ .Title }}</h3>
+                    <div class="underline"></div>
+                    {{ .Content }}
+                </div>
+                <div class="w-100 w-40-m">
+                    <img src="/images/products/{{ .Params.featuredImage }}" alt="{{ .Params.image_alt }}" class="product-featured-image" width="640" height="360">
+                </div> 
+            </div>
+        </div>
+    </div>
+    {{ range .Params.Product.productLine }}
+    <div class="cards products sp-10">
+        {{ if .name }}
+        <div class="wrapper">
+            <h3 class="no-margin">{{ .name }}</h3>
+            <div class="underline"></div>
+            {{ if .description }}
+            <p class="b">{{ .description }}</p>
+            {{ end }}
+            <ul>
+                {{ range .benefits }}
+                    {{ if .benefit }}
+                        <li>{{ .benefit }}</li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+        <div class="cards__wrapper wrapper">
+            {{ range .products }}
+                <div class="cards__col">
+                    <img src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="" width="640" height="360" loading="lazy">
+                    <div class="cards__details">
+                        <h3 class="h4">{{ .title }}</h6>
+                        <p class="b">{{ .productCode }}</p>
+                        <p class="padding-bottom-2">{{ .description }}</p>
+                        <h4 class="h5 no-margin">Top Features</h6>
+                        <ul>
+                            {{ range .features }}
+                                <li>{{ .feature }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    <!-- <div class="cards products">
+        <div class="container">
+            <h3>{{ .Params.infinityProducts.name }}</h3>
+            <div class="underline"></div>
+            <p>{{ .Params.infinityProducts.description }}</p>
+        </div>
+        <div class="cards__wrapper container-wide">
+            {{ range .Params.infinityProducts.products }}
+                <div class="cards__col">
+                    <img src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="">
+                    <h4>{{ .title }}</h6>
+                    <p class="b">{{ .productCode }}</p>
+                    <p>{{ .seer }}</p>
+                    <p>{{ .decibel }}</p>
+                </div>
+            {{ end }}
+        </div>
+    </div> -->
+    {{ partial "cta" . }}
+{{ end }}

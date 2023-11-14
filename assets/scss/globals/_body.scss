@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  max-width: $measure-long;
+}
+
+html,
+body,
+div,
+picture,
+section,
+ol,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+body {
+  background-color: $white;
+  font-family: $primary-font;
+  overflow-x: hidden;
+}
+
+.site-main {
+  opacity: 1;
+  margin-top: $mobileHeader;
+
+  @include breakpoint(md) {
+    margin-top: $desktopHeader;
+  }
+}
+
+// Style highlight to match our themes colors
+::-moz-selection {
+  background: rgba(0, 85, 178, 0.8);
+  color: $white;
+}
+::selection {
+  background: rgba(0, 85, 178, 0.8);
+  color: $white;
+}
+::-ms-selection {
+  background: rgba(0, 85, 178, 0.8);
+  color: $white;
+}

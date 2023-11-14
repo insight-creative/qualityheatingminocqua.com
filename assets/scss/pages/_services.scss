@@ -1,0 +1,9 @@
+.single-service {
+  img {
+    width: 60%;
+    margin: 0 auto;
+    @include breakpoint(md) {
+      width: 40%;
+    }
+  }
+}

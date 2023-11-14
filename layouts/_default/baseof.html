@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ block "head" . }}{{ partial "head" . }}{{ end }}
+{{ $namespace := lower .Page.Title }}
+{{ $mainClass := lower .Page.Title }}
+
+<body>
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+  <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}">
+  {{ block "main" . }}{{ end }}
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  </main>
+</body>
+</html>

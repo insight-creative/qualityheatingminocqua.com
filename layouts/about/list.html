@@ -1,0 +1,26 @@
+{{ define "main" }}
+    {{ partial "hero" .  }}
+    <div class="wrapper flow padding-top-6 padding-bottom-6">
+        {{ .Content  }}
+    </div>
+    <div class="bg-gray padding-top-6">
+        {{ with .Params.team }}
+        <div class="wrapper-wide">
+            <h2 class="no-margin">{{ .heading }}</h2>
+            <div class="underline"></div>
+            <div class="flex flex-column flex-row-m">
+                {{ range .member }}
+                <div class="w-100 w-50-m flow">
+                    <img src="{{ .image }}" alt="{{ .image_alt }}" class="{{ .name }} headshot">
+                    <h3 class="h4">{{ .name }}</h4>
+                    <p>{{ .copy }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ partial "testimonials" . }}
+    </div>
+    {{ partial "full-width-feature" . }}
+    {{ partial "cta" . }}
+{{ end }}

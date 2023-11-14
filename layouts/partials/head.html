@@ -1,0 +1,60 @@
+<head>
+    {{ if site.Params.GoogleAnalytics }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.GoogleAnalytics }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ .Site.Params.GoogleAnalytics }}');
+    </script>
+    {{ end }}
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>
+        {{ if isset .Params "page_title" }}
+        {{ .Params.page_title }}
+        {{ else }}
+        {{ .Title }}
+        {{ end }} | {{ .Site.Title }}
+    </title>
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="{{ if .Params.hero_image }}{{ .Permalink }}{{ .Params.hero_image.hero_image_jpg }}{{ else }}{{ site.BaseURL }}images/website-preview.jpg{{ end }}">
+    <meta property="og:description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Description }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Description }}">
+    <meta name="twitter:site" content="@p4lm">
+    <meta name="twitter:image" content="{{ if .Params.hero_image }}{{ .Permalink }}{{ .Params.hero_image.hero_image_jpg }}{{ else }}{{ site.BaseURL }}images/website-preview.jpg{{ end }}">
+
+    {{ $scss := resources.Get "scss/main.scss" | toCSS }}
+    {{ $postcss := $scss | resources.PostCSS | minify }}
+    <link rel="stylesheet" href="{{ $postcss.Permalink }}">
+
+    {{ $darkscss := resources.Get "scss/dark.scss" | toCSS }}
+    {{ $postcssdark := $darkscss | resources.PostCSS | minify }}
+    <link rel="stylesheet" href="{{ $postcssdark.Permalink }}" media="(prefers-color-scheme: dark)">
+
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <link rel="preload" href="../fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/poppins-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="/images/background-images/home-hero.jpg">
+
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+</head>

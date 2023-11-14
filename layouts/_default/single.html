@@ -1,0 +1,8 @@
+{{ define "main" }}
+    {{ partial "hero" .  }}
+    <div class="wrapper padding-top-6 padding-bottom-6">
+        {{ .Content  }}
+    </div>
+    {{ partial "full-width-feature" . }}
+    {{ partial "cta" . }}
+{{ end }}

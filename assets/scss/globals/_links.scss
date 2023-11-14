@@ -1,0 +1,28 @@
+a {
+  color: $primary-color;
+  transition: 0.3s ease;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline-color: $accent-color;
+  }
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.call-link {
+  h2 {
+    font-size: $ic-300;
+
+    @include breakpoint(sm) {
+      font-size: $ic-400;
+    }
+    @include breakpoint(md) {
+      font-size: $ic-500;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+<section class="intro">
+  <div class="intro-overlay padding-top-6 padding-bottom-6">
+    <div class="wrapper-wide">
+      <div class="fade-up flex flex-column flex-row-m">
+        <div class="w-100 w-50-m">
+          <h2 class="no-margin">{{ .Params.intro.heading }}</h2>
+          <div class="underline"></div>
+          <p>{{ .Params.intro.copy }}</p>
+          <a href="/about/" class="btn btn-primary">Learn More About Us {{ partial "svg-icons/arrow-right.svg" . }}</a>
+        </div>
+        <div class="w-100 w-50-m">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="awards wrapper-wide flex flex-center padding-top-6 padding-bottom-6">
+  {{ range .Params.awards }}
+    <img src="{{ .image }}" alt="{{ .alt }}" width="360" height="360" loading="lazy">
+  {{ end }}
+</section>
+{{ if .Params.cards.cards_row }}
+{{ partial "cards" . }}
+{{ end }}
+{{ if .Params.cards.cards_stacked }}
+{{ partial "cards-stacked" . }}
+{{ end }}
+{{ partial "full-width-feature" .  }}
+{{ partial "testimonials" . }}
+{{ partial "cta" . }}
+{{ end }}

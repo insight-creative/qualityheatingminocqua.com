@@ -1,0 +1,15 @@
+.product-featured-image {
+  max-width: 26rem;
+  margin: 0 auto;
+}
+.single-product {
+  @include breakpoint(md) {
+    padding-top: $ic-700;
+  }
+}
+.boilers,
+.garage-heaters {
+  .single-product {
+    padding-bottom: $ic-600;
+  }
+}

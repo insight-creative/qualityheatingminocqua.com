@@ -1,0 +1,238 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/poppins-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* poppins-900 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $black;
+  font-family: $primary-font;
+  font-size: $ic-100;
+  line-height: 1.5;
+
+  @include breakpoint(md) {
+    font-size: $ic-200;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $primary-color;
+  line-height: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  max-width: $measure-short;
+}
+
+h1,
+.h1 {
+  font-size: $ic-500;
+}
+
+h2,
+.h2 {
+  font-size: $ic-400;
+}
+
+h3,
+.h3 {
+  font-size: $ic-300;
+}
+
+h4,
+.h4 {
+  font-size: $ic-300;
+}
+
+h5,
+.h5 {
+  font-size: $ic-200;
+}
+
+h6,
+.h6 {
+  font-size: $ic-200;
+}
+
+@include breakpoint(md) {
+  h1,
+  .h1 {
+    font-size: $ic-700;
+  }
+
+  h2,
+  .h2 {
+    font-size: $ic-600;
+  }
+
+  h3,
+  .h3 {
+    font-size: $ic-500;
+  }
+
+  h4,
+  .h4 {
+    font-size: $ic-400;
+  }
+
+  h5,
+  .h5 {
+    font-size: $ic-300;
+  }
+
+  h6,
+  .h6 {
+    font-size: $ic-200;
+  }
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@include breakpoint(sm) {
+  .text-left-s {
+    text-align: left !important;
+  }
+
+  .text-right-s {
+    text-align: right !important;
+  }
+
+  .text-center-s {
+    text-align: center !important;
+  }
+}
+
+@include breakpoint(md) {
+  .text-left-m {
+    text-align: left !important;
+  }
+
+  .text-right-m {
+    text-align: right !important;
+  }
+
+  .text-center-m {
+    text-align: center !important;
+  }
+}
+
+@include breakpoint(lg) {
+  .text-left-l {
+    text-align: left !important;
+  }
+
+  .text-right-l {
+    text-align: right !important;
+  }
+
+  .text-center-l {
+    text-align: center !important;
+  }
+}
+
+.b {
+  font-weight: bold;
+}
+
+.underline {
+  height: 5px;
+  width: 100px;
+  background-color: $accent-color;
+  margin-top: 0.5rem;
+  margin-bottom: $ic-400;
+}
+
+.white-underline {
+  background-color: $white;
+}
+
+.shift-first {
+  text-transform: capitalize;
+}
+
+.shift-up {
+  text-transform: uppercase;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $accent-color;
+}

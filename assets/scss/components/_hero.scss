@@ -1,0 +1,86 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  padding: $ic-700 $ic-200;
+
+  @include breakpoint(md) {
+    height: 80vh;
+    flex-direction: row;
+  }
+
+  &__service-request {
+    position: relative;
+    z-index: 2;
+    margin-top: $ic-400;
+
+    @include breakpoint(md) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__carrier-logo {
+    max-width: 150px;
+  }
+}
+
+.hero,
+.short-hero {
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.short-hero {
+  position: relative;
+  height: 30vh;
+  background-color: $secondary-color;
+
+  @include breakpoint(md) {
+    height: auto;
+    min-height: 30vh;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: $gray-overlay;
+  }
+
+  &__image {
+    height: 30vh;
+    object-fit: cover;
+    width: 100vw;
+
+    @include breakpoint(md) {
+      height: auto;
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.hero__title,
+.hero__subtitle {
+  color: $white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.simple-hero + .padding-top-6 {
+  padding-top: $ic-300;
+}

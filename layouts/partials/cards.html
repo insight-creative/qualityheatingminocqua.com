@@ -1,0 +1,21 @@
+<section class="bg-gray padding-top-6 padding-bottom-6">
+    <div class="fade-up">
+        <div class="wrapper-wide">
+            <h2 class="no-margin">Why Choose {{ site.Params.author }}?</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="cards wrapper-wide margin-bottom-4">
+            <div class="cards__wrapper">
+                {{ range .Params.cards.card_item }}
+                <div class="cards__col">
+                    <div class="cards__icon {{ .icon }}">
+                        <svg class="cards__svg" aria-hidden="true"><use xlink:href="#{{ .icon }}"></use></svg>
+                    </div>
+                    <h3 class="h6">{{ .heading }}</h3>
+                    <p>{{ .body }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

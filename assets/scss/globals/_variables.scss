@@ -1,0 +1,48 @@
+// Colors
+$primary-color: #800000;
+$secondary-color: #9a0000;
+$accent-color: #ff873c;
+$black: #232323;
+$black-2: #303030;
+$light-gray: #e9e9e9;
+$white: #ffffff;
+
+// Overlays
+$white-overlay: rgba($white, 0.9);
+$gray-overlay: rgba(0, 0, 0, 0.6);
+$blue-overlay-70: rgba($primary-color, 0.7);
+$blue-overlay-95: rgba($primary-color, 0.95);
+$red-overlay-70: rgba(181, 23, 23, 0.7);
+$red-overlay-95: rgba(181, 23, 23, 0.95);
+
+// Fonts
+$primary-font: "Poppins", sans-serif;
+
+// Scale and rhythm based on a major third
+$scale: 1.25;
+
+$ic--200: 1rem / $scale / $scale;
+$ic--100: 1rem / $scale;
+$ic-100: 1rem;
+$ic-200: 1rem * $scale;
+$ic-300: 1rem * $scale * $scale;
+$ic-400: 1rem * $scale * $scale * $scale;
+$ic-500: 1rem * $scale * $scale * $scale * $scale;
+$ic-600: 1rem * $scale * $scale * $scale * $scale * $scale;
+$ic-700: 1rem * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-800: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-900: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale;
+$ic-1000: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale * $scale;
+
+// Header spacing
+$mobileHeader: 150px;
+$desktopHeader: 180px;
+
+$measure-long: 80ch;
+$measure-short: 28ch;
+
+$transition: .3s ease-in-out;
+
+$radius: 4px;

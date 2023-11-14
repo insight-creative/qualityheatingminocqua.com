@@ -1,0 +1,14 @@
+.service-sidebar {
+  &__nav {
+    padding: $ic-200 $ic-200 $ic-200 0;
+  }
+
+  &__list-item {
+    list-style: none;
+    padding-bottom: $ic-200;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

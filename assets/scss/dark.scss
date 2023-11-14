@@ -1,0 +1,88 @@
+@import "globals/variables";
+
+body {
+  background-color: $black;
+  color: $white;
+}
+
+.site-header,
+.nav-list__dropdown,
+.simple-hero .breadcrumbs-nav {
+  background-color: $black !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: $white;
+}
+
+.nav-list {
+  background: $primary-color;
+}
+
+.intro-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.bg-gray,
+.single-product .breadcrumbs-nav,
+.products .cards__col:nth-of-type(even),
+.contact-form,
+.contact-info__contact-card {
+  background-color: $black-2;
+}
+
+.single-product .breadcrumbs-nav a,
+.service-summary__summary,
+.business-info a,
+.nav-list__link,
+.about .full-width-featured__body {
+  color: $white;
+}
+
+.products-list a {
+  &:hover,
+  &:focus {
+    background-color: $black-2;
+  }
+}
+
+.testimonial__col,
+.contact-form__form-group input,
+.contact-form__form-group textarea {
+  background-color: $black !important;
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.testimonial h3,
+.service-summary__read-more,
+.text-primary,
+.contact-form .contact-form__form-group label,
+.about .full-width-featured__heading,
+a,
+.contact .business-info a,
+.simple-hero .breadcrumbs-nav a {
+  color: #4d89ef;
+}
+
+.service-summary__read-more svg,
+svg {
+  fill: #4d89ef;
+  stroke: #4d89ef;
+}
+
+.full-width-featured::after {
+  background-image: linear-gradient(90deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,.5) 100%);
+}

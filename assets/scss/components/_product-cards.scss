@@ -1,0 +1,94 @@
+.products-list {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $light-gray;
+      box-shadow: 5px 5px 25px rgba(25, 25, 96, 0.25);
+    }
+  }
+
+  &__col {
+    border: 1px solid $primary-color;
+    padding: $ic-300;
+    flex: 1 1 300px;
+    margin: 0.5rem;
+    max-width: 20rem;
+  }
+}
+
+.products {
+  .cards__wrapper {
+    margin-top: $ic-700;
+  }
+
+  .cards__col {
+    background: $primary-color;
+    border-bottom: none;
+    flex: 1 1 300px;
+    max-width: 28rem;
+    font-size: $ic-200;
+    position: relative;
+    padding: $ic-300;
+
+    @include breakpoint(md) {
+      display: flex;
+      flex-direction: row;
+      flex: initial;
+      align-items: flex-start;
+      padding: $ic-300 $ic-300 $ic-300 12rem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    img {
+      width: 70%;
+      margin: 0 auto $ic-400;
+
+      @include breakpoint(md) {
+        position: absolute;
+        width: 25%;
+        top: 0;
+        left: -5%;
+      }
+
+      @include breakpoint(lg) {
+        left: -10%;
+      }
+    }
+
+    h3,
+    h4,
+    p,
+    li {
+      color: $white;
+    }
+
+    p {
+      margin: 0 0 $ic-200 0;
+    }
+
+    ul {
+      @include breakpoint(md) {
+        columns: 2;
+      }
+    }
+
+    li {
+      font-size: $ic-200;
+      margin-right: $ic-200;
+    }
+  }
+
+  .cards__col:nth-of-type(even) {
+    background: $black;
+  }
+}
