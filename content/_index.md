@@ -35,7 +35,7 @@ cards:
   cards_stacked: true
   image: dealer-homeowner-outdoor
   card_item:
-    - icon: financing
+    - icon: service
       heading: Service for All Makes and Models
       body: For your convenience, our professionally trained technicians can service any make or model.
     - icon: quality

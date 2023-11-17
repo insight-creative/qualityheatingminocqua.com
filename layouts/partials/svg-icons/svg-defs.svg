@@ -4,6 +4,10 @@
         <title>Financing</title>
             {{ partial "svg-icons/financing.svg" . }}
         </symbol>
+        <symbol id="service" viewBox="0 0 24 24">
+        <title>Service</title>
+            {{ partial "svg-icons/service.svg" . }}
+        </symbol>
         <symbol id="quality" viewBox="0 0 448 512">
         <title>Commitment to Quality</title>
             {{ partial "svg-icons/quality.svg" . }}
