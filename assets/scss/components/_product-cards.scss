@@ -1,94 +1,70 @@
 .products-list {
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  margin-block: 0;
+  padding-inline-start: 0;
+}
 
-  a {
-    text-decoration: none;
-    transition: 0.3s ease;
+.products-list__item {
+  border: 1px solid $primary-color;
+  // max-width: 20rem;
+  margin-top: 0;
+  list-style-type: none;
+}
 
-    &:hover,
-    &:focus {
-      background-color: $light-gray;
-      box-shadow: 5px 5px 25px rgba(25, 25, 96, 0.25);
-    }
-  }
+.products-list__link {
+  padding: $ic-300;
+  text-decoration: none;
+  transition: 0.3s ease;
 
-  &__col {
-    border: 1px solid $primary-color;
-    padding: $ic-300;
-    flex: 1 1 300px;
-    margin: 0.5rem;
-    max-width: 20rem;
+  &:hover,
+  &:focus {
+    background-color: $light-gray;
+    box-shadow: 5px 5px 25px rgba(25, 25, 96, 0.25);
   }
 }
 
-.products {
-  .cards__wrapper {
-    margin-top: $ic-700;
+.products__wrapper {
+  margin-block: $ic-700;
+}
+
+.products__card {
+  background: $primary-color;
+  color: $white;
+  position: relative;
+  padding: $ic-300;
+  margin-block-end: $ic-500;
+}
+
+.products__card img {
+  width: 80%;
+  margin: auto;
+}
+
+.products__card p {
+  margin: 0 0 $ic-200 0;
+}
+
+.products__card ul {
+  @include breakpoint(md) {
+    columns: 2;
   }
+}
 
-  .cards__col {
-    background: $primary-color;
-    border-bottom: none;
-    flex: 1 1 300px;
-    max-width: 28rem;
-    font-size: $ic-200;
-    position: relative;
-    padding: $ic-300;
+.products__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  transform: translate(16px, 16px);
+}
 
-    @include breakpoint(md) {
-      display: flex;
-      flex-direction: row;
-      flex: initial;
-      align-items: flex-start;
-      padding: $ic-300 $ic-300 $ic-300 12rem;
-      max-width: 100%;
-      width: 100%;
-    }
+.products__card:nth-of-type(even) {
+  background: $black;
 
-    img {
-      width: 70%;
-      margin: 0 auto $ic-400;
-
-      @include breakpoint(md) {
-        position: absolute;
-        width: 25%;
-        top: 0;
-        left: -5%;
-      }
-
-      @include breakpoint(lg) {
-        left: -10%;
-      }
-    }
-
-    h3,
-    h4,
-    p,
-    li {
-      color: $white;
-    }
-
-    p {
-      margin: 0 0 $ic-200 0;
-    }
-
-    ul {
-      @include breakpoint(md) {
-        columns: 2;
-      }
-    }
-
-    li {
-      font-size: $ic-200;
-      margin-right: $ic-200;
-    }
-  }
-
-  .cards__col:nth-of-type(even) {
-    background: $black;
+  &::after {
+    background-color: $primary-color;
   }
 }

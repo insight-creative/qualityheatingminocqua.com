@@ -6,6 +6,11 @@ page_title: Central AC Units
 description: Explore all Carrier Residential central air conditioning units to find the perfect solution for your home. Choose your model and contact us today.
 has_hero_image: true
 weight: 1
+
+menu:
+  main:
+    parent: Products
+
 Product:
   productLine:
     - name: Infinity System
@@ -15,19 +20,6 @@ Product:
         - benefit: Ultra-quiet comfort- up to 50% quieter than the nearest competitor
         - benefit: Premium humidity and temperature control
       products:
-        - title: Infinity® 26 Air Conditioner with Greenspeed® Intelligence
-          image: infinity-20-air-conditioner-with-greenspeed-intelligence-24VNA0.png
-          productCode: 24VNA6
-          description: Our highest efficiency and most advanced air conditioner with up to 26 SEER for premium energy savings with extremely quiet performance and premium comfort
-          features:
-            - feature: "Initial Cost: $$$"
-            - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 26"
-            - feature: "Cooling EER: Up to 16.5"
-            - feature: "Compressor Type: Variable-speed"
-            - feature: "Sound Level (As Low As): 51 decibels"
-            - feature: "Silencer System II Design: Yes"
-            - feature: "Compressor Sound Blanket: Yes"
         - title: Infinity® 19VS Central Air Conditioner
           image: infinity-19vs-central-air-conditioner-24VNA9.png
           productCode: 24VNA9
@@ -35,23 +27,10 @@ Product:
           features:
             - feature: "Initial Cost: $$$"
             - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 19"
-            - feature: "Cooling EER: Up to 12.5"
+            - feature: "Cooling SEER2: Up to 19"
+            - feature: "Cooling EER2: Up to 13"
             - feature: "Compressor Type: Five-stage"
             - feature: "Sound Level (As Low As): 56 decibels"
-            - feature: "Silencer System II Design: Yes"
-            - feature: "Compressor Sound Blanket: Yes"
-        - title: Infinity® 16 Central Air Conditioner
-          image: infinity-central-air-conditioner.png
-          productCode: 24ANB6
-          description: Up to 16 SEER for enhanced energy savings with enhanced comfort features.
-          features:
-            - feature: "Initial Cost: $$$"
-            - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 17"
-            - feature: "Cooling EER: Up to 13"
-            - feature: "Compressor Type: Single-stage"
-            - feature: "Sound Level (As Low As): 66 decibels"
             - feature: "Silencer System II Design: Yes"
             - feature: "Compressor Sound Blanket: Yes"
 
@@ -62,30 +41,18 @@ Product:
         - benefit: Quiet comfort
         - benefit: Enhanced humidity and temperature control
       products:
-        - title: Performance™ 17 Central Air Conditioner
-          image: performance-17-central-air-conditioner-24ACB7.png
-          productCode: 24ACB7
-          description: Up to 17 SEER for enhanced energy savings with enhanced comfort features.
-          features:
-            - feature: "Initial Cost: $$$"
-            - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 17"
-            - feature: "Cooling EER: Up to 13.5"
-            - feature: "Compressor Type: Two-stage"
-            - feature: "Sound Level (As Low As): 72 decibels"
-            - feature: "Compressor Sound Blanket: Yes"
-        - title: Performance™ 16 Central Air Conditioner
-          image: performance-17-central-air-conditioner-24ACB7.png
-          productCode: 24APB6
-          description: Up to 17 SEER for enhanced energy savings with standard comfort features.
+        - title: Performance™ 17 2-Stage Air Conditioner
+          image: performance-17-2-stage-air-conditioner-24TPA7-1.png
+          productCode: 24TPA7
+          description: Up to 17 SEER2 for enhanced energy savings with enhanced comfort features.
           features:
             - feature: "Initial Cost: $$"
             - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 17"
-            - feature: "Cooling EER: Up to 13"
-            - feature: "Compressor Type: Single-stage"
-            - feature: "Sound Level (As Low As): 68 decibels"
-            - feature: "Compressor Sound Blanket: Yes"
+            - feature: "Cooling SEER2: Up to 17"
+            - feature: "Cooling EER2: Up to 13.5"
+            - feature: "Compressor Type: Two-stage"
+            - feature: "Sound Level (As Low As): 71 decibels"
+            - feature: "Compressor Sound Blanket: Not applicable"
         
     - name: Comfort Series
       description: The most economical energy-efficient cooling for your home
@@ -94,15 +61,15 @@ Product:
         - benefit: Simple operation
         - benefit: Budget friendly
       products:
-        - title: Comfort™ 13 Central Air Conditioner
+        - title: Comfort™ 14 Central Air Conditioner
           image: comfort-13-central-air-conditioner-24ABB3.png
-          productCode: 24ABB3
-          description: Up to 17 SEER for enhanced energy savings with enhanced comfort features.
+          productCode: 24SCA4
+          description: Up to 16 SEER2 for moderate energy savings with standard comfort features.
           features:
             - feature: "Initial Cost: $"
             - feature: "Overall Efficiency: Not ENERGY STAR® certified"
-            - feature: "Cooling SEER: 13"
-            - feature: "Cooling EER: 11"
+            - feature: "Cooling SEER2: up to 16"
+            - feature: "Cooling EER2: Up to 13.5"
             - feature: "Compressor Type: Single-stage"
             - feature: "Sound Level (As Low As): 73 decibels"
             - feature: "Silencer System II Design: Not applicable"

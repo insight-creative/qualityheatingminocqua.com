@@ -10,43 +10,16 @@
   }
 }
 
-.emergency-cta {
-  background-color: $primary-color;
-  color: $white;
-  padding: $ic-300;
-
-  @include breakpoint(lg) {
-    padding: $ic-300 $ic-600;
-  }
-
-  @include breakpoint(xl) {
-    padding: $ic-600;
-  }
-
-  a,
-  h2,
-  svg {
-    color: $white;
-    fill: $white;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
-  svg {
-    width: $ic-400;
-    height: $ic-400;
-  }
-}
-
-.emergency-phone {
-  display: flex;
-  align-items: center;
-}
-
 .contact-form {
   background-color: $white;
   padding: $ic-300;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
   box-shadow: 8px 8px 48px rgba(25, 25, 96, 0.25);
+
+  @include breakpoint(md) {
+    border-bottom-right-radius: 0;
+  }
 
   @include breakpoint(lg) {
     padding: $ic-300 $ic-600;
@@ -80,7 +53,7 @@
   }
 
   &__form-group textarea {
-    height: $ic-700;
+    height: $ic-1000;
   }
 
   &__btn {
@@ -92,4 +65,8 @@
   .contact-form {
     height: 100%;
   }
+}
+
+.page-contact .contact-form {
+  border-radius: $radius;
 }

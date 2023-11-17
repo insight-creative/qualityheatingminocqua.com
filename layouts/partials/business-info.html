@@ -1,21 +1,27 @@
 <div class="business-info">
-    <div class="business-info__wrapper flex">
+    <div class="business-info__wrapper flex flex-column flex-row-m flex-justify-between gap-sm">
         <div class="business-info__col flex">
-            {{ partial "svg-icons/clock.svg" . }}
+            <div class="icon-lg icon-fill-white">
+                {{ partial "svg-icons/clock.svg" . }}
+            </div>
             <div class="business-info__col-content">
                 <p class="b text-primary">{{ .Site.Params.hours }}<br>{{ .Site.Params.hoursFri }}</p>
                 <p>24hr Emergency Service</p>
             </div>
         </div>
         <div class="business-info__col flex">
-        {{ partial "svg-icons/location.svg" . }}
+            <div class="icon-lg icon-fill-white">
+                {{ partial "svg-icons/location.svg" . }}
+            </div>
             <div class="business-info__col-content header-business-info__address">
                 <p class="b text-primary">Address</p>
                 <p><a href="{{ .Site.Params.google_map_directions }}" target="_blank" rel="noreferrer">{{ .Site.Params.address_line_1 }}<br>{{ .Site.Params.address_line_2 }}</a></p>
             </div>
         </div>
         <div class="business-info__col flex">
-        {{ partial "svg-icons/phone.svg" . }}
+            <div class="icon-lg icon-fill-white">
+                {{ partial "svg-icons/phone.svg" . }}
+            </div>
             <div class="business-info__col-content">
                 <p class="b text-primary">Call {{ site.Params.author }}</p>
                 <p><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>

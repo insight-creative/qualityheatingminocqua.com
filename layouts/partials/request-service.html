@@ -1,8 +1,10 @@
 <div class="contact-form-wrapper">
     <div class="emergency-cta">
         <p class="no-margin">24hr Emergency Service</p>
-        <div class="emergency-phone flex">
-            {{ partial "svg-icons/phone.svg" . }}
+        <div class="emergency-phone flex flex-center gap-sm">
+            <div class="icon-xxl icon-fill-white">
+                {{ partial "svg-icons/phone.svg" . }}
+            </div>
             <a href="tel:{{ .Site.Params.phone }}"><h2 class="h3">{{ .Site.Params.phone }}</h2></a>
         </div>
     </div>
@@ -30,7 +32,7 @@
                     <label for="message">Message*</label>
                     <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="contact-form__btn btn btn-primary">Send
+                <button type="submit" class="contact-form__btn btn btn--primary">Send
                     Request {{ partial "svg-icons/arrow-right.svg" . }}</button>
             </form>
         </div>

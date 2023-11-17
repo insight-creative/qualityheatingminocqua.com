@@ -1,15 +1,22 @@
 {{ range $index, $element := .Params.featured }}
 {{ if modBool $index 2 }}
-<section class="full-width-featured authorized-dealer" style="background-image: url('/images/background-images/{{ .background }}')">
-    <div class="full-width-featured__content wrapper-wide padding-top-6 padding-bottom-6">
+<section class="full-width-featured authorized-dealer block" style="background-image: url('/images/background-images/{{ .background }}')">
+    <div class="full-width-featured__content wrapper-lg">
       <div class="fade-up flex flex-center flex-column flex-row-m">
+        <div class="w-100 w-70-m text-color-white flow">
+          <div>
+            <h2 class="full-width-featured__heading no-margin">{{ .heading }}</h2>
+            <div class="underline"></div>
+          </div>
+          <p>{{ .body | markdownify }}</p>
+          {{ if .button.enabled }}
+            {{ with .button }}
+                <a class="btn btn--primary" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .button_text }} {{ partial "svg-icons/arrow-right.svg" . }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
         <div class="full-width-featured__image w-100 w-30-m">
           <img src="/images/{{ .image }}" alt="{{ .image_alt }}" width="360" height="360" loading="lazy">
-        </div>
-        <div class="w-100 w-70-m">
-          <h2 class="full-width-featured__heading text-white no-margin">{{ .heading }}</h2>
-          <div class="full-width-featured__underline underline white-underline"></div>
-          <p>{{ .body | markdownify }}</p>
         </div>
       </div>
     </div>

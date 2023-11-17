@@ -13,12 +13,12 @@
   &__svg {
     width: $ic-500;
     height: $ic-500;
-    fill: $accent-color;
-    stroke: $accent-color;
+    fill: $primary-color;
+    stroke: $primary-color;
   }
 
   &__col {
-    padding: $ic-300;
+    padding-block: $ic-300;
     flex: 1 1 300px;
     margin: $ic-300 $ic-300 $ic-600 $ic-300;
 

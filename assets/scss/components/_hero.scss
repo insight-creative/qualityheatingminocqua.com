@@ -1,86 +1,107 @@
 .hero {
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero > * {
+  grid-area: 1 / -1;
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__body {
+  font-size: $ic-300;
+  font-weight: 500;
+}
+
+.hero__carrier-logo {
+  max-width: 150px;
+}
+
+.hero__service-request {
+  position: relative;
+  z-index: 2;
+  margin-top: $ic-400;
+
+  @include breakpoint(md) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba($black, .8);
+}
+
+.hero--home {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-height: 1500px;
+  overflow: visible;
+  background-image: url("/images/background-images/home-hero-mobile.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   margin-left: auto;
   padding: $ic-700 $ic-200;
+  position: relative;
+  z-index: 1;
 
   @include breakpoint(md) {
+    background-image: url("/images/background-images/home-hero-laptop.jpg");
     height: 80vh;
     flex-direction: row;
   }
 
-  &__service-request {
-    position: relative;
-    z-index: 2;
-    margin-top: $ic-400;
-
-    @include breakpoint(md) {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
-
-  &__carrier-logo {
-    max-width: 150px;
-  }
-}
-
-.hero,
-.short-hero {
-  &__inner {
-    position: relative;
-    z-index: 2;
-  }
-}
-
-.short-hero {
-  position: relative;
-  height: 30vh;
-  background-color: $secondary-color;
-
-  @include breakpoint(md) {
-    height: auto;
-    min-height: 30vh;
+  @include breakpoint(lg) {
+    background-image: url("/images/background-images/home-hero.jpg");
   }
 
   &::after {
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    content: "";
-    background-color: $gray-overlay;
+    // background-color: $blue-overlay-70;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
   }
 
-  &__image {
-    height: 30vh;
-    object-fit: cover;
-    width: 100vw;
+  .hero__content {
+    padding: $ic-600 0;
 
     @include breakpoint(md) {
-      height: auto;
+      padding: 0;
+    }
+
+    h1 {
+      color: $white;
     }
   }
-
-  &__inner {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.hero__title,
-.hero__subtitle {
-  color: $white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
-
-.simple-hero + .padding-top-6 {
-  padding-top: $ic-300;
 }

@@ -2,7 +2,7 @@
 $primary-color: #800000;
 $secondary-color: #9a0000;
 $accent-color: #ff873c;
-$black: #232323;
+$black: #0D0D0D;
 $black-2: #303030;
 $light-gray: #e9e9e9;
 $white: #ffffff;
@@ -37,12 +37,12 @@ $ic-1000: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
   $scale * $scale;
 
 // Header spacing
-$mobileHeader: 150px;
-$desktopHeader: 180px;
+$mobileHeader: 77px;
+$desktopHeader: 97px;
 
 $measure-long: 80ch;
 $measure-short: 28ch;
 
 $transition: .3s ease-in-out;
 
-$radius: 4px;
+$radius: 50px;

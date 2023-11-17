@@ -1,25 +1,27 @@
 {{ define "main" }}
     {{ partial "hero" . }}
-    <div class="wrapper sp-10">
-        <h2 class="no-margin">{{ .Params.intro.heading }}</h2>
-        <div class="underline"></div>
-        <p>{{ .Params.intro.copy }}</p>
-        <div class="hero__carrier-logo">
-            <img src="/images/carrier-logo.png" alt="Carrier Logo" width="300" height="100">
+    <div class="block">
+        <div class="wrapper flow">
+            <div>
+                <h2 class="no-margin">{{ .Params.intro.heading }}</h2>
+                <div class="underline"></div>
+            </div>
+            <p>{{ .Params.intro.copy }}</p>
+            <div class="hero__carrier-logo">
+                <img src="/images/carrier-logo.png" alt="Carrier Logo" width="300" height="100">
+            </div>
         </div>
-    </div>
-    <div class="wrapper sp-10">
-        <div class="products-list">
-            <div class="products-list__wrapper">
+        <div class="wrapper padding-top-4">
+            <ul class="products-list auto-grid gap-sm">
                 {{ range .Pages }}
-                <a href="{{ .Permalink }}" class="products-list__col">
-                    <div>
+                <li class="products-list__item">
+                    <a class="products-list__link" href="{{ .Permalink }}">
                         <h3 class="h5">{{ .Title }}</h3>
                         <img src="{{ .Site.BaseURL }}images/products/{{ .Params.featuredImage }}" alt="{{ .Params.image_alt }}" width="640" height="360" loading="lazy">
-                    </div>
-                </a>
+                    </a>
+                </li>
                 {{ end }}
-            </div>
+            </ul>
         </div>
     </div>
     {{ partial "cta" . }}

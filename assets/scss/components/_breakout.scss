@@ -1,0 +1,25 @@
+.breakout {
+    position: relative;
+    margin-inline: -16px;
+    padding: $ic-400;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-color: $primary-color;
+        transform: translate(16px, 16px);
+    }
+
+    @include breakpoint(md) {
+        margin-inline: -100px;
+
+        ul {
+            columns: 2;
+        }
+    }
+}

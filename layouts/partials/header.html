@@ -34,9 +34,10 @@
         {{ end }}
         <li class="header__nav-list-item">
           <a class="btn btn--primary" href="/schedule-demo/" aria-label="Schedule a Demo">
-              Schedule a Demo
+              Request Service
           </a>
         </li>
+        <a class="header__phone flex flex-center" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc."><span class="icon-md icon-fill-primary">{{ partial "svg-icons/phone.svg" . }}</span>{{ .Site.Params.phone }}</a>
       </ul>
     </nav>
     <div id="header__mobile-nav" class="header__mobile-nav bg-white">

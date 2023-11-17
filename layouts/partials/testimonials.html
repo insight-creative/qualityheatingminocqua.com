@@ -1,19 +1,18 @@
-<section class="testimonials bg-gray padding-top-6 padding-bottom-6">
-    <div class="fade-up">
-        <div class="wrapper-wide">
-            <h2 class="no-margin">Testimonials</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="cards testimonial wrapper-wide margin-bottom-4">
-            <div class="cards__wrapper">
-                {{ range .Params.testimonials }}
-                <blockquote class="testimonial__col">
-                    <div class="testimonial__icon">{{ partial "svg-icons/quote.svg" . }}</div>
-                    <p>{{ .testimonial }}</p>
-                    <h3 class="h5">{{ .author }}</h6>
-                </blockquote>
-                {{ end }}
-            </div>
+<section class="testimonials block bg-gray">
+    <div class="wrapper-lg">
+        <h2 class="no-margin">What Our Customers Are Saying</h2>
+        <div class="underline"></div>
+        <p>Real customers who chose {{ site.Params.author }} for their heating, ventilation, and air conditioning needs. From fast response times to complex installations, our customers highlight the expertise, professionalism, and friendliness that define our service.</p>
+    </div>
+    <div class="testimonial wrapper-lg padding-top-4">
+        <div class="auto-flexbox-grid gap-sm">
+            {{ range .Params.testimonials }}
+            <blockquote class="testimonial__col flow">
+                <div class="testimonial__icon">{{ partial "svg-icons/quote.svg" . }}</div>
+                <p class="font-size-xs">{{ .testimonial }}</p>
+                <h3 class="h5">{{ .author }}</h6>
+            </blockquote>
+            {{ end }}
         </div>
     </div>
 </section>

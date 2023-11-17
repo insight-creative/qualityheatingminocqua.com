@@ -6,30 +6,38 @@
           <div class="contact-info__col w-100 w-50-l">
               <div class="contact-info__contact-card contact-info__address">
                 <div class="business-info">
-                    <div class="business-info__wrapper flex flex-column">
+                    <div class="business-info__wrapper flex flex-column gap-lg">
                         <div class="business-info__col flex">
-                            {{ partial "svg-icons/envelope.svg" . }}
+                            <div class="icon-lg icon-fill-primary">
+                                {{ partial "svg-icons/envelope.svg" . }}
+                            </div>
                             <div class="business-info__col-content">
                                 <h6>Email</h6>
                                 <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.Author }}</a></p>
                             </div>
                             </div>
                         <div class="business-info__col flex">
-                            {{ partial "svg-icons/phone.svg" . }}
+                            <div class="icon-lg icon-fill-primary">
+                                {{ partial "svg-icons/phone.svg" . }}
+                            </div>
                             <div class="business-info__col-content">
                                 <h6>Phone</h6>
                                 <p>Office: <a href="tel:{{ .Site.Params.phone }}"> {{ .Site.Params.phone }}</a></p>
                             </div>
                         </div>
                         <div class="business-info__col flex">
-                            {{ partial "svg-icons/location.svg" . }}
+                            <div class="icon-lg icon-fill-primary">
+                                {{ partial "svg-icons/location.svg" . }}
+                            </div>
                             <div class="business-info__col-content header-business-info__address">
                                 <h6>Address</h6>
                                 <p><a href="{{ .Site.Params.google_map_directions }}" target="_blank" rel="noreferrer">{{ .Site.Params.address_line_1 }}<br>{{ .Site.Params.address_line_2 }}</a></p>
                             </div>
                         </div>
                         <div class="business-info__col flex">
-                            {{ partial "svg-icons/calendar.svg" . }}
+                            <div class="icon-md icon-fill-primary">
+                                {{ partial "svg-icons/clock.svg" . }}
+                            </div>
                             <div class="business-info__col-content">
                                 <h6>Hours</h6>
                                 <p>{{ .Site.Params.hours }}<br>{{ .Site.Params.hoursFri }}</p>
@@ -66,7 +74,7 @@
                             <label for="message">Message*</label>
                             <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="contact-form__btn btn btn-primary">Send
+                        <button type="submit" class="contact-form__btn btn btn--primary">Send
                             Message {{ partial "svg-icons/arrow-right.svg" . }}</button>
                     </form>
                 </div>

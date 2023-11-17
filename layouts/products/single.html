@@ -1,11 +1,13 @@
 {{ define "main" }}
     <div class="single-product block">
-        <div class="wrapper-wide">
+        <div class="wrapper-lg">
             <div class="flex flex-column flex-row-m flex-center bg-gray padding-2">
-                <div class="w-100 w-60-m">
+                <div class="w-100 w-60-m flow">
                     {{ partial "breadcrumbs" . }}
-                    <h3 class="no-margin">{{ .Title }}</h3>
-                    <div class="underline"></div>
+                    <div>
+                        <h3 class="no-margin">{{ .Title }}</h3>
+                        <div class="underline"></div>
+                    </div>
                     {{ .Content }}
                 </div>
                 <div class="w-100 w-40-m">
@@ -15,9 +17,8 @@
         </div>
     </div>
     {{ range .Params.Product.productLine }}
-    <div class="cards products sp-10">
+    <div class="products wrapper-lg">
         {{ if .name }}
-        <div class="wrapper">
             <h3 class="no-margin">{{ .name }}</h3>
             <div class="underline"></div>
             {{ if .description }}
@@ -30,13 +31,12 @@
                     {{ end }}
                 {{ end }}
             </ul>
-        </div>
         {{ end }}
-        <div class="cards__wrapper wrapper">
+        <div class="products__wrapper">
             {{ range .products }}
-                <div class="cards__col">
-                    <img src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="" width="640" height="360" loading="lazy">
-                    <div class="cards__details">
+                <div class="products__card grid gap-sm">
+                    <img class="grid-12 grid-4-md" src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="" width="640" height="360" loading="lazy">
+                    <div class="grid-12 grid-8-md cards__details">
                         <h3 class="h4">{{ .title }}</h6>
                         <p class="b">{{ .productCode }}</p>
                         <p class="padding-bottom-2">{{ .description }}</p>
@@ -47,7 +47,6 @@
                             {{ end }}
                         </ul>
                     </div>
-                    
                 </div>
             {{ end }}
         </div>

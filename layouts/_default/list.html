@@ -1,4 +1,26 @@
 {{ define "main" }}
-{{ .Title }}
-{{ .Content }}
+    {{ partial "hero" .  }}
+    <div class="block">
+        <div class="wrapper flow">
+            {{ .Content  }}
+        </div>
+    </div>
+    {{ if .Params.bbb_block }}
+        <div class="block bg-black">
+            <div class="wrapper flow text-align-center">
+                <div>
+                    <h2>{{ .Params.bbb_block.heading }}</h2>
+                    <p>{{ .Params.bbb_block.body }}</p>
+                </div>
+                <img src="/uploads/bbb.png" alt="" style="max-width:200px;margin-inline:auto;">
+            </div>
+        </div>
+    {{ end }}
+    {{ if .Params.featured }}
+        {{ partial "full-width-feature" . }}
+    {{ end }}
+    {{ if .Params.testimonials }}
+        {{ partial "testimonials" . }}
+    {{ end }}
+    {{ partial "cta" . }}
 {{ end }}

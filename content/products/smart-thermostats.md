@@ -5,6 +5,11 @@ image_alt: Carrier Smart Thermostats
 page_title: Smart Residential Thermostats
 description: Smart thermostats give you easy-to-use control of your home comfort anytime. Learn more about Carrier smart thermostats
 weight: 4
+
+menu:
+  main:
+    parent: Products
+
 Product:
   productLine:
     - name: Infinity System
@@ -37,38 +42,6 @@ Product:
             - feature: "Voice Control: No"
             - feature: "Stream Music: No"
             - feature: "Hands-Free Calling: No"
-
-    - name: ecobee by Carrier Series
-      description: "Personalized preferences:"
-      benefits:
-        - benefit: For non-Infinity Systems
-        - benefit: Smart home compatible
-        - benefit: Hands-free calling and music streaming capabilities
-      products:
-        - title: ecobee3 lite Pro
-          image: carrier-3Lite-front-view.png
-          productCode: EB-STATE3LTCR-01
-          description: The ecobee3 lite, Powered by Carrier, tailors itself to your schedule, your personal comfort preferences and the weather outside.
-          features:
-            - feature: "Initial Cost: $$"
-            - feature: "Energy Star® Certified: Yes"
-            - feature: "Remote Sensors: Compatible with SmartSensor"
-            - feature: "Alexa® Built-In: No"
-            - feature: "Voice Control: No"
-            - feature: "Stream Music: No"
-            - feature: "Hands-Free Calling: No"
-        - title: ecobee SmartThermostat Pro with voice control
-          image: carrier-smart-thermostat-with-sensor-to-right.png
-          productCode: EB-STATE5CR-01
-          description: Works seamlessly with third-party smart home platforms and includes added features like voice control and hands-free calling.
-          features:
-            - feature: "Initial Cost: $$"
-            - feature: "Energy Star® Certified: Yes"
-            - feature: "Remote Sensors: SmartSensor included"
-            - feature: "Alexa® Built-In: Yes"
-            - feature: "Voice Control: Yes"
-            - feature: "Stream Music: Yes"
-            - feature: "Hands-Free Calling: Yes"
         - title: Smart Sensor for Infinity® Zoning Systems
           image: infinity-smart-sensor-SYSTXZNSMS01.png
           productCode: SYSTXZNSMS01
@@ -89,6 +62,18 @@ Product:
             - feature: "Initial Cost: $$$"
             - feature: "Energy Star® Certified: No"
             - feature: "Remote Sensors: Compatible with Infinity sensors"
+            - feature: "Alexa® Built-In: No"
+            - feature: "Voice Control: No"
+            - feature: "Stream Music: No"
+            - feature: "Hands-Free Calling: No"
+        - title: Performance™ Four-Zone System
+          image: performance-4-zone-system-ZONECC4ZCN01.png
+          productCode: ZONECC4ZCN01
+          description: Full-featured zoning control for up to four separate zones.
+          features:
+            - feature: "Initial Cost: $$"
+            - feature: "Energy Star® Certified: No"
+            - feature: "Remote Sensors: Requires thermostat in each zone"
             - feature: "Alexa® Built-In: No"
             - feature: "Voice Control: No"
             - feature: "Stream Music: No"

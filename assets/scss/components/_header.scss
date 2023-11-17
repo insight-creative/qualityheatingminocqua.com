@@ -139,10 +139,16 @@
 
 .header__logo {
   display: block;
-  height: 55px;
-  width: 300px;
+  height: 45px;
+  width: 250px;
   background-image: url("/uploads/quality-heating-logo.svg");
-  background-size: 300px 55px;
+  background-size: 250px 45px;
+
+  @include breakpoint(md) {
+    height: 55px;
+    width: 300px;
+    background-size: 300px 55px;
+  }
 }
 
 .header__nav {
@@ -220,7 +226,8 @@
 
 .header__nav-list-link {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   padding: $ic--200 0;
   transition: .3s ease-out;
   color: $black;
@@ -287,12 +294,31 @@
 }
 
 .header__sub-menu-link {
+  font-size: $ic-100;
+  font-weight: 500;
   padding: 0.3rem;
   color: $black;
 }
 
 .header__child-menu {
   padding: .3rem;
+}
+
+.header__phone {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: $ic-100;
+  color: $black;
+  transition: $transition;
+
+  &:hover, 
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.header__phone span {
+  margin-right: 4px;
 }
 
 .collapse {

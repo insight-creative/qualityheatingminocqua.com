@@ -1,30 +1,27 @@
-.contact-info {
-  &__col:nth-of-type(1) {
-    margin: 0 0 $ic-300 0;
+.contact-info__col:nth-of-type(1) {
+  margin: 0 0 $ic-300 0;
 
-    @include breakpoint(md) {
-      margin: $ic-300 $ic-300 $ic-300 0;
-    }
-  }
-  &__col:nth-of-type(2) {
-    margin: 0 0 $ic-300 0;
-
-    @include breakpoint(md) {
-      margin: $ic-300 0 $ic-300 $ic-300;
-    }
-  }
-  &__contact-card {
-    padding: $ic-300;
-    background-color: $light-gray;
-    height: 100%;
-    border-bottom: 5px solid $primary-color;
+  @include breakpoint(md) {
+    margin: $ic-300 $ic-300 $ic-300 0;
   }
 }
-.thank-you {
-  .blog-content {
-    margin-top: $ic-700;
+
+.contact-info__col:nth-of-type(2) {
+  margin: 0 0 $ic-300 0;
+
+  @include breakpoint(md) {
+    margin: $ic-300 0 $ic-300 $ic-300;
   }
 }
+
+.contact-info__contact-card {
+  padding: $ic-300;
+  background-color: $light-gray;
+  height: 100%;
+  border-bottom: 5px solid $primary-color;
+  border-radius: $radius;
+}
+
 .contact {
   .business-info {
     display: flex;
@@ -59,7 +56,4 @@
       font-weight: 600;
     }
   }
-}
-.contact-info__contact-card .business-info__col:not(:last-of-type) {
-  border-bottom: 1px solid #e5e5e5;
 }

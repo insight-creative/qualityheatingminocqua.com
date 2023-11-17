@@ -3,12 +3,16 @@
 {{ block "head" . }}{{ partial "head" . }}{{ end }}
 {{ $namespace := lower .Page.Title }}
 {{ $mainClass := lower .Page.Title }}
+{{ $pageParent := .Section }}
 
-<body>
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
-  <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}">
-  {{ block "main" . }}{{ end }}
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-  </main>
+<body class="page-{{ anchorize $mainClass }}{{ if .Params.page_class }} {{ .Params.page_class }}{{ end }}{{ if $pageParent }} parent-page-{{ $pageParent | urlize }}{{ end }} page-id-{{ with .File }}{{ .UniqueID }}{{ end }}" data-instant-intensity="viewport">
+  <div class="site-wrap">
+    {{ block "header" . }}{{ partialCached "header" . }}{{end}}
+    <main id="main-content" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "footer" . }}{{ partialCached "footer" . }}{{end}}
+  </div>
 </body>
+
 </html>

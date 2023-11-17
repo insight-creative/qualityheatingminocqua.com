@@ -1,71 +1,83 @@
-.breadcrumbs-nav {
-  background-color: $primary-color;
-  color: $white;
+.breadcrumbs {
+  position: relative;
+  z-index: 3;
+  color: $light-gray;
+  padding: $ic-200 0;
+}
+
+.breadcrumbs__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 20px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.breadcrumbs svg {
+  position: relative;
+  top: -2px;
+  fill: $light-gray;
+  width: $ic-100;
+  height: $ic-100;
+}
+
+.breadcrumbs__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: $ic-100 0;
+  width: 100%;
   margin: 0;
-  padding: 0;
 
-  li {
-    list-style-type: none;
+  @include breakpoint(md) {
     position: relative;
-
-    &::after {
-      position: absolute;
-      top: 2px;
-      left: -4px;
-      content: ">";
-    }
+    top: 8px;
   }
+}
 
-  li:first-of-type {
-    &::after {
-      display: none;
-    }
+.breadcrumbs__list-item {
+  list-style-type: none;
+  position: relative;
+  font-size: $ic--100;
+  max-width: none;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "/";
   }
 
   a {
-    color: $white;
-    margin: 0 $ic-200;
+    color: $light-gray;
     text-decoration: none;
-    font-size: $ic-200;
+    font-size: $ic--100;
+    padding: 0 $ic--100;
+    white-space: nowrap;
   }
 }
 
-.single-post,
-.single-product,
-.simple-hero {
-  .breadcrumbs-nav {
-    background-color: $white;
-    display: none;
+.breadcrumbs .active {
+  &::after {
+    position: absolute;
+    content: "";
+  }
 
-    @include breakpoint(md) {
-      display: flex;
-    }
-
-    &__wrapper {
-      width: 100%;
-      padding: 0;
-    }
-
-    li {
-      &::after {
-        color: $primary-color;
-      }
-    }
-
-    a {
-      color: $black;
-    }
+  a {
+    color: rgba($light-gray, 0.6);
+    pointer-events: none;
   }
 }
 
-.single-product {
-  .breadcrumbs-nav {
-    background-color: $light-gray;
+.parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs__inner {
+  padding-inline: 0;
+}
 
-    li:first-of-type {
-      a {
-        margin-left: 0;
-      }
-    }
-  }
+.parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs svg {
+  fill: $primary-color;
+}
+
+.parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs__list-item,
+.parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs__list-item a {
+  color: $primary-color;
 }

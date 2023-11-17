@@ -1,0 +1,26 @@
+.emergency-cta {
+    background-color: $primary-color;
+    color: $white;
+    padding: $ic-300;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  
+    @include breakpoint(lg) {
+      border-top-right-radius: 0;
+    }
+
+    @include breakpoint(lg) {
+      padding: $ic-300 $ic-600;
+    }
+  
+    @include breakpoint(xl) {
+      padding: $ic-600;
+    }
+  
+    a,
+    h2 {
+        color: $white;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+}

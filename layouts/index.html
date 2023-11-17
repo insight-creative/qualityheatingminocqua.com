@@ -1,25 +1,29 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 <section class="intro">
-  <div class="intro-overlay padding-top-6 padding-bottom-6">
-    <div class="wrapper-wide">
-      <div class="fade-up flex flex-column flex-row-m">
-        <div class="w-100 w-50-m">
-          <h2 class="no-margin">{{ .Params.intro.heading }}</h2>
-          <div class="underline"></div>
+  <div class="intro-overlay block">
+    <div class="wrapper-lg">
+      <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-50-m flow">
+          <div>
+            <h2 class="no-margin">{{ .Params.intro.heading }}</h2>
+            <div class="underline"></div>
+          </div>
           <p>{{ .Params.intro.copy }}</p>
-          <a href="/about/" class="btn btn-primary">Learn More About Us {{ partial "svg-icons/arrow-right.svg" . }}</a>
+          <div class="flex flex-column flex-row-m gap-sm">
+            {{ if .Params.intro.button.enabled }}
+              {{ with .Params.intro.button }}
+                  <a class="btn btn--primary" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .button_text }} {{ partial "svg-icons/arrow-right.svg" . }}</a>
+              {{ end }}
+            {{ end }}
+            <a class="header__phone flex flex-center" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc."><span class="icon-md icon-fill-primary">{{ partial "svg-icons/phone.svg" . }}</span>{{ .Site.Params.phone }}</a>
+          </div>
         </div>
         <div class="w-100 w-50-m">
         </div>
       </div>
     </div>
   </div>
-</section>
-<section class="awards wrapper-wide flex flex-center padding-top-6 padding-bottom-6">
-  {{ range .Params.awards }}
-    <img src="{{ .image }}" alt="{{ .alt }}" width="360" height="360" loading="lazy">
-  {{ end }}
 </section>
 {{ if .Params.cards.cards_row }}
 {{ partial "cards" . }}

@@ -6,6 +6,11 @@ page_title: Residential Furnaces
 description: Our quiet, energy-efficient furnaces are designed to provide warmth in winter and to circulate clean and refreshing air. Find a furnace today.
 has_hero_image: true
 weight: 2
+
+menu:
+  main:
+    parent: Products
+
 Product:
   productLine:
     - name: Infinity System
@@ -24,16 +29,6 @@ Product:
             - feature: "Overall Efficiency: All sizes ENERGY STAR® certified"
             - feature: "Heating AFUE: Up to 98.5%"
             - feature: "Gas Valve Technology: Modulating"
-            - feature: "Blower Motor Type: Variable-speed"
-        - title: Infinity® 96 Gas Furnace
-          image: infinity-96-gas-furnace-59TN6.png
-          productCode: 59TN6
-          description: ENERGY STAR® certified. Up to 96.7% AFUE for premium energy savings with enhanced comfort features.
-          features:
-            - feature: "Initial Cost: $$$"
-            - feature: "Overall Efficiency: All sizes ENERGY STAR® certified"
-            - feature: "Heating AFUE: Up to 96.7%"
-            - feature: "Gas Valve Technology: Two-stage"
             - feature: "Blower Motor Type: Variable-speed"
 
     - name: Performance Series
@@ -61,16 +56,16 @@ Product:
         - benefit: Simple operation
         - benefit: Basic humidity control
       products:
-        - title: Comfort™ 95 Gas Furnace
-          image: performance-96-gas-furnace-59TP6.png
-          productCode: 59SC5
-          description: All sizes are ENERGY STAR® certified. Up to 96.5% AFUE for premium energy savings with standard comfort features.
+        - title: Comfort™ 80 Gas Furnace
+          image: comfort-80-gas-furnace-58sb.png
+          productCode: 58SB0
+          description: 80% AFUE for moderate energy savings with standard comfort features.
           features:
             - feature: "Initial Cost: $"
-            - feature: "Overall Efficiency: Select sizes ENERGY STAR® certified"
-            - feature: "Heating AFUE: Up to 96.5%"
+            - feature: "Overall Efficiency: Not ENERGY STAR® certified"
+            - feature: "Heating AFUE: 80%"
             - feature: "Gas Valve Technology: Single-stage"
-            - feature: "Blower Motor Type: Multi-speed"
+            - feature: "Blower Motor Type: Multi 18-speed"
 ---
 
 The furnace is the heart of your home—out of sight, out of mind, and still keeping you and your family comfortable all year round. Our quiet, energy-efficient furnaces are designed to provide warmth to keep you cozy in winter and to circulate clean, refreshing air from your cooling system in the summer.

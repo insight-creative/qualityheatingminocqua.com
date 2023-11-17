@@ -3,10 +3,39 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: $primary-color;
+  transition: 0.3s ease;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    outline-color: $primary-color;
+  }
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.call-link {
+  h2 {
+    font-size: $ic-300;
+
+    @include breakpoint(sm) {
+      font-size: $ic-400;
+    }
+    @include breakpoint(md) {
+      font-size: $ic-500;
+    }
+  }
+}
+
 a:not([class]) {
   color: $primary-color;
   text-decoration: none;
-  background-image: linear-gradient($secondary-color, $secondary-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);
+  background-image: linear-gradient($black, $black),linear-gradient(270deg,$secondary-color 0%,$secondary-color 100%);
   background-size: 100% 2px,0 2px;
   background-position: 100% 100%,0 100%;
   background-repeat: no-repeat;

@@ -14,6 +14,10 @@ hero_image:
   hero_image_avif_1000: indoor-air-quality-hero-1000.avif
   hero_image_avif_600: indoor-air-quality-hero-600.avif
 
+menu:
+  main:
+    parent: Products
+
 weight: 11
 intro:
   heading: Breathe Cleaner Air

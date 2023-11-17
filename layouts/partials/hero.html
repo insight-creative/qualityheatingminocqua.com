@@ -1,8 +1,9 @@
 {{ if eq .Title "Home" }}
-<div class="hero home-hero w-100">
-  <div class="hero__inner w-100-m wrapper-wide flex flex-column flex-row-m flex-center">
-    <div class="w-100 w-60-m">
-      <h1>{{ .Params.hero_title }}</h1>
+<div class="hero hero--home w-100">
+  <div class="hero__content w-100-m wrapper-lg flex flex-column flex-row-m flex-center">
+    <div class="w-100 w-60-m flow text-color-white">
+      <h1 class="no-margin">{{ .Params.hero.heading }}</h1>
+      <p class="hero__body">{{ .Params.hero.body }}</p>
       <div class="hero__carrier-logo">
         <img src="/images/carrier-logo-white-tag.png" alt="Carrier Logo" width="300" height="100">
       </div>
@@ -16,7 +17,7 @@
 </div>
 {{ else if eq .Params.has_hero_image "true" }}
 {{ $heroClass := lower .Page.Title }}
-<div class="short-hero {{ anchorize $heroClass }}-hero flex flex-center">
+<div class="hero hero--{{ anchorize $heroClass }}">
   {{ $heroimage := (.Resources.GetMatch (index .Params.hero_image.hero_image_jpg)) }}
   {{ $herosmallwebp := $heroimage.Resize "600x q80 webp" }}
   {{ $heromediumwebp := $heroimage.Resize "1000x q80 webp" }}
@@ -30,24 +31,34 @@
       <source sizes="100vw" srcset="{{ .Params.hero_image.hero_image_avif_600 }} 600w, {{ .Params.hero_image.hero_image_avif_1000 }} 1000w, {{ .Params.hero_image.hero_image_avif_1400 }} 1400w, {{ .Params.hero_image.hero_image_avif }} 1600w" type="image/avif" > 
       <source sizes="100vw" srcset="{{ $herosmallwebp.RelPermalink }} 600w, {{ $heromediumwebp.RelPermalink }} 1000w, {{ $herolargewebp.RelPermalink }} 1400w, {{ $heroextralargewebp.RelPermalink }} 1600w" type="image/webp" > 
       <source sizes="100vw" srcset="{{ $herosmalljpg.RelPermalink }} 600w, {{ $heromediumjpg.RelPermalink }} 1000w, {{ $herolargejpg.RelPermalink }} 1400w, {{ $heroextralargejpg.RelPermalink }} 1600w" type="image/jpg" > 
-      <img src="{{ $heroimage.RelPermalink }}" alt="" width="{{ $heroimage.Width }}" height="{{ $heroimage.Height }}" class="short-hero__image" loading="lazy">
+      <img class="hero__image" src="{{ $heroimage.RelPermalink }}" alt="" width="{{ $heroimage.Width }}" height="{{ $heroimage.Height }}">
     </picture>
   </picture>
-  <div class="hero__inner short-hero__inner wrapper text-center">
-    {{ if (isset .Params "hero_title") }}
-    <h1 class="hero__title short-hero__title text-white no-margin">
-      {{ .Params.hero_title }}
-    </h1>
-    {{ else }}
-    <h1 class="hero__title short-hero__title text-white no-margin">
-      {{ .Page.Title }}
-    </h1>
-    {{ end }}
+  <div class="hero__content">
+    <div class="wrapper text-align-center text-color-white flow">
+      {{ if .Params.hero.heading }}
+      <h1 class="hero__title short-hero__title text-white no-margin">
+        {{ .Params.hero.heading }}
+      </h1>
+      {{ else }}
+      <h1 class="hero__title short-hero__title text-white no-margin">
+        {{ .Page.Title }}
+      </h1>
+      {{ end }}
+      {{ if .Params.hero.body }}
+      <p>
+        {{ .Params.hero.body }}
+      </p>
+      {{ end }}
+    </div>
   </div>
+  <div class="hero__overlay"></div>
 </div>
-{{ partial "breadcrumbs" . }}
+<div class="bg-primary">
+  {{ partial "breadcrumbs" . }}
+</div>
 {{ else }}
-<div class="simple-hero wrapper padding-top-6">
+<div class="hero hero--small wrapper padding-top-6">
   {{ partial "breadcrumbs" . }}
   {{ if (isset .Params "hero_title") }}
     <h1>

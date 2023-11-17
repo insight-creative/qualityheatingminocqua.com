@@ -1,7 +1,10 @@
 ---
 title: About
-hero_title: About
-page_title: Heating and Cooling Experts in Shawano, WI
+hero: 
+  heading: Heating and Cooling Company in Minocqua, WI
+  body: Professionally trained technicians servicing all brands, makes and models
+
+page_title: Heating and Cooling Company in Minocqua, WI
 description: "Greiber Heating & Sheet Metal offers residential HVAC repair, furnace, air conditioning or cooling service plus quality Carrier equipment in Waunakee, Wisconsin"
 has_hero_image: "true"
 hero_image:
@@ -14,50 +17,72 @@ hero_image:
 menu:
   main:
     weight: 3
-
-team:
-  heading: Get to Know our Leadership Team
-  member:
-    - name: Devon Greiber, Owner
-      image: devon.jpg
-      image_alt: Headshot of Devon Greiber
-      copy: "Devon began work at Greiber Heating & Sheet Metal while still attending high school in Waunakee. He enjoyed working on homes with his father and always had aspirations to eventually lead the family business. Devon attended the University of Wisconsin - Stout where he received a Bachelor’s degree in engineering. After college, Devon worked as an engineer for John Deere before returning to his true passion—the family business—in partnership with his mother Karen in 2014."
-    - name: Karen Greiber, Office Manager
-      image: karen.jpg
-      image_alt: Headshot of Karen Greiber
-      copy: "Karen and her late husband Marv became owners of Greiber Heating & Sheet Metal in 1990. As the office manager, Karen handles administrative operations including scheduling, accounting and billing. She’s also the kind voice you hear on the other end of the phone when you call. Outside of the office, she enjoys volunteering throughout the community and spending time with her children and grandchildren."
+bbb_block: 
+  heading: Trust Quality Heating for Excellent Results
+  body: Quality Heating has an A+ BBB rating as a heating and cooling company in Minocqua, WI. We’re proud to offer the best in a wide range of home comfort solutions. Contact us for service, we look forward to serving your comfort needs!
 featured:
-  - background: carrier-dealer-service-air-conditioner-mb.jpg
-    image: NATE-Certified-600.png
-    heading: NATE-Certified
-    body: Our technicians are NATE (North American Technician Excellence) certified. As the leading program for heating, ventilation, air-conditioning, and refrigeration, NATE is the only test supported by the entire industry and confirms technicians have real working knowledge of these specific systems.
-  - image: 2021-carrier-presidents-award.jpg
-    image2: 2020-carrier-presidents-award.jpg
-    image3: 2019-carrier-presidents-award.jpg
-    heading: Nationally Recognized
-    body: Greiber Heating & Sheet Metal is a three-time Carrier President’s Award recipient. Each year, Carrier honors HVAC companies that demonstrate the ability to go far beyond the status quo—even in the face of challenges and change—year-over-year growth and continual emphasis on customer satisfaction.
+  - background: carrier-factory-authorized-dealer-background.jpg
+    image: carrier-factory-authorized-dealer-logo.png
+    image_alt: Carrier Factory Authorized Dealer Logo
+    heading: Carrier Authorized Dealer
+    body: As a factory authorized dealer of quality Carrier products since 1996, Quality Heating, Inc. knows the value of quality products and equipment. We offer a large selection of Energy Star products ranging from air conditioners and furnaces to air purifiers, ductless split systems and more.
+    button:
+      enabled: true
+      button_url: /products/
+      button_text: View Our Products
+      open_in_new_tab: false
 testimonials:
-  - testimonial: Excellent service. We had no heat. In the middle of a -10 day on very short notice. They came out quickly and fixed the furnace within the hour. Great experience.
-    author: "- Tim C."
-  - testimonial: They did a great job - and fast - in an emergency when the furnace quit during the polar vortex!
-    author: "- Brian A."
-  - testimonial: Excellent customer service, quick turnaround to do the work, friendly, best price in the area! Highly recommend!
-    author: "- Karly K."
+  - testimonial: Quality Heating, is an outstanding company. We called last Thursday mid afternoon because our AC went out. We had friends arriving for the weekend and it was hot! They arrived within 1 hour and replaced the compressor. Checked the entire unit and thermostat out. Professional, friendly. We can't thank them enough.
+    author: "- Karen Strait"
+  - testimonial: Great experience with Quality Heating. Had a problem with the condensate pump. Jeff came out next day and was very professional and knowledgeable. Cost was more than fair. Highly recommend them.
+    author: "- Douglas Reed"
+  - testimonial: Quality Heating has been taking care of my home in Eagle River, WI for 10 years. They are wonderful about responding quickly in an emergency, they're extremely knowledgeable and their pricing is fair. Can recommend unequivocally.
+    author: "- Denny Erardi"
 ---
 
 <div>
-  <h2 class="no-margin">Pride and Purpose, Since 1945</h2>
+  <h2 class="no-margin">Over 30 Years of HVAC Experience</h2>
   <div class="underline"></div>
 </div>
 
-Greiber Heating & Sheet Metal is a locally owned and operated family business in Waunakee, Wisconsin led by Devon Greiber in partnership with his mother Karen Greiber. The business—along with a strong commitment to quality workmanship and service—has been handed down through four generations.
+**For over 30 years**, Quality Heating has been delivering exceptional heating and cooling services in Minocqua, WI and the Lakeland Area. Since opening in 1992, we've maintained a commitment to quality service, reliability, and to providing you with the best HVAC services. Whether it's routine maintenance, emergency repairs, or installing energy-efficient systems, our team of certified HVAC professionals is dedicated to ensuring comfort in your home all year round.
 
-Devon’s great grandfather Art Greiber built the business in 1945 while tending to the family farm before his son Leo Greiber took over and moved the business to O’Malley Street in Waunakee in 1958. Devon’s father Marv Greiber joined the family business after college in 1975, and eventually moved the business to its current location on Main Street in 2000.
+Our knowledgeable technicians respond quickly to all calls 24 hours a day. Our team, consisting of over **35 dedicated professionals**, including **7 full-time service technicians** and a **dedicated service manager**, is always ready to respond – any hour, any day.
 
-For decades, residents of Dane, Sauk and Columbia Counties have relied on the friendly, professional and custom service of our highly skilled and trained technicians. As a Carrier dealer since 1983, we know the long-standing value of high-quality equipment. We supply and install Energy Star Carrier products for all homes—big and small—including furnaces, air purifiers, humidifiers, air conditioning systems, geothermal heating solutions and more. For your well-being and convenience, we also provide:
+Fully licensed and insured, Quality Heating is well-equipped to meet your needs in residential installations, furnace replacements, air conditioning, hydronic systems, and air quality solutions. Understanding that each customer’s needs are unique, personalized and free professional estimates are offered, ensuring you receive the **ideal solution for your space**.
 
-- Courteous and experienced technicians
-- 24-hour emergency service
-- Same-day emergency response
-- FREE in-home estimates
-- Affordable financing options
+Interested in exploring options for your furnace or air conditioner? [Contact us](/contact/) for a free estimate and experience the Quality Heating difference – where your comfort and satisfaction are our top priorities.
+
+<div class="breakout bg-black flow">
+  <div>
+    <h2 class="no-margin">Our Comprehensive HVAC Services</h2>
+    <div class="underline"></div>
+  </div>
+
+  * Residential sales and service
+
+  * Professional system analysis, design and installation
+
+  * We service all brands, makes and models
+
+  * Geothermal heat pumps
+
+  * Radiant heating systems
+
+  * Energy Star products
+
+  * Free estimates
+
+  * Indoor air quality specialists
+
+  * In-Floor radiant heat
+
+  * Hydronic heating solutions
+
+  * Furnace cleaning and inspections
+
+  * System tuneups
+
+  <a class="btn btn--primary" href="/request-service/">Request Service</a>
+
+</div>

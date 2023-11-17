@@ -6,6 +6,11 @@ page_title: Heat Pumps | Heat & Cool Your Home
 description: Heat pump systems provide versatile heating, cooling, and humidity control. Explore all Carrier Residential heat pumps to find yours.
 has_hero_image: true
 weight: 3
+
+menu:
+  main:
+    parent: Products
+
 Product:
   productLine:
     - name: Infinity System
@@ -15,34 +20,56 @@ Product:
         - benefit: Ultra-quiet comfort—up to 50% quieter than the nearest competition
         - benefit: Premium humidity and temperature control
       products:
-        - title: Infinity® 20 Heat Pump With Greenspeed® Intelligence
-          image: infinity-20-heat-pump-with-greenspeed-intelligence-25VNA0.png
-          productCode: 25VNA0
-          description: Up to 20.5 SEER for premium energy savings with premium comfort features.
+        - title: Infinity® 24 Heat Pump With Greenspeed® Intelligence
+          image: infinity-24-heat-pump-with-greenspeed-intelligence-25VNA4.png
+          productCode: 25VNA4
+          description: Our highest efficiency and most advanced heat pump with up to 22 SEER2 for premium energy savings with extremely quiet performance and premium comfort features.
           features:
             - feature: "Initial Cost: $$$"
             - feature: "Overall Efficiency: ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 20.5"
-            - feature: "Cooling EER: Up to 16"
-            - feature: "Heating HSPF: Up to 13"
+            - feature: "Cooling SEER2: Up to 22"
+            - feature: "Cooling EER2: Up to 14"
+            - feature: "Heating HSPF2: Up to 10.5"
             - feature: "Compressor Type: Variable-speed"
-            - feature: "Sound Level (As Low As): 58 decibels"
+            - feature: "Sound Level (As Low As): 51 decibels"
             - feature: "Silencer System II Design: Yes"
             - feature: "Compressor Sound Blanket: Yes"
         - title: Infinity® 18VS Heat Pump
           image: infinity-18VS-heat-pump-25VNA8.png
           productCode: 25VNA8
-          description: Up to 19 SEER for premium energy savings with premium comfort features
+          description: Up to 18.5 SEER2 for premium energy savings with premium comfort features
           features:
             - feature: "Initial Cost: $$$"
-            - feature: "Overall Efficiency: Select sizes ENERGY STAR® certified"
-            - feature: "Cooling SEER: Up to 19"
-            - feature: "Cooling EER: Up to 12.5"
-            - feature: "Heating HSPF: Up to 11"
+            - feature: "Overall Efficiency: ENERGY STAR® certified"
+            - feature: "Cooling SEER2: Up to 18.5"
+            - feature: "Cooling EER2: Up to 12.5"
+            - feature: "Heating HSPF2: Up to 9"
             - feature: "Compressor Type: Five-stage"
             - feature: "Sound Level (As Low As): 55 decibels"
             - feature: "Silencer System II Design: Yes"
             - feature: "Compressor Sound Blanket: Yes"
+
+    - name: Performance™® Series
+      description: "Flexible, efficient performance:"
+      benefits:
+        - benefit: Energy efficient—SEER rating up to 17, EER rating up to 13, and HSPF rating up to 9.5
+        - benefit: Superior humidity and temperature control
+        - benefit: Quiet comfort
+      products:
+        - title: Performance™ 18 Compact Heat Pump
+          image: performance-18-compact-heat-pump-38MURA.png
+          productCode: 38MURA
+          description: Up to 18 SEER2 for enhanced energy savings with premium comfort features.
+          features:
+            - feature: "Initial Cost: $$"
+            - feature: "Overall Efficiency: Select sizes ENERGY STAR® certified"
+            - feature: "Cooling SEER2: Up to 18"
+            - feature: "Cooling EER2: Up to 12.4"
+            - feature: "Heating HSPF2: Up to 9.8"
+            - feature: "Compressor Type: Variable-speed"
+            - feature: "Sound Level (As Low As): 54 decibels"
+            - feature: "Silencer System II Design: Not applicable"
+            - feature: "Compressor Sound Blanket: Not applicable"
 
     - name: Comfort Series
       description: "The most economical warm- and cold-weather performance:"
@@ -51,18 +78,18 @@ Product:
         - benefit: Simple operation
         - benefit: Budget friendly
       products:
-        - title: Comfort™ 14 Heat Pump
-          image: performance-16-heat-pump-25HCB6.png
-          productCode: 25HCE4
-          description: 14 SEER for moderate energy savings with standard comfort features.
+        - title: Comfort™ 15 Heat Pump
+          image: comfort-15-heat-pump-25SCA5.png
+          productCode: 25SCA5
+          description: Up to 15.2 SEER2 for moderate energy savings with standard comfort features.
           features:
             - feature: "Initial Cost: $"
-            - feature: "Overall Efficiency: Not ENERGY STAR® certified"
-            - feature: "Cooling SEER: 14"
-            - feature: "Cooling EER: Up to 11.5"
-            - feature: "Heating HSPF: 8.2"
+            - feature: "Overall Efficiency: Select sizes ENERGY STAR® certified"
+            - feature: "Cooling SEER2: Up to 15.2"
+            - feature: "Cooling EER2: Up to 12.5"
+            - feature: "Heating HSPF2: 8.1"
             - feature: "Compressor Type: Single-stage"
-            - feature: "Sound Level (As Low As): 69 decibels"
+            - feature: "Sound Level (As Low As): 71 decibels"
             - feature: "Silencer System II Design: Not applicable"
             - feature: "Compressor Sound Blanket: Not applicable"
 ---

@@ -1,7 +1,7 @@
 <footer id="footer" class="footer">
   <div class="footer__copyright">
-    <div class="footer__copyright-wrapper wrapper-wide flex flex-column flex-row-m">
-      <div class="flex flex-column flex-row-m">
+    <d class="footer__copyright-wrapper wrapper-lg flex flex-column flex-row-m">
+      <div class="flex flex-column flex-row-m flex-center">
         <span>© {{ dateFormat "2006" now }} {{ .Site.Params.author }}</span>
         <nav class="footer__nav" aria-label="Footer Menu">
           <ul class="footer__nav-list">
@@ -11,14 +11,7 @@
           </ul>
         </nav>
       </div>
-      <ul class="footer__social">
-        <li class="footer__social-list-item">
-          <a href="{{ site.Social.facebook }}" class="footer__social-icon" target="_blank" rel="noreferrer">
-            {{ partial "svg-icons/facebook.svg" . }}
-            <span class="screen-reader-text">Facebook</span>
-          </a>
-        </li>
-      </ul>
+      <a class="footer__credits footer__nav-item" href="https://insightcreative.com" target="_blank">Website by Insight Creative, Inc.</a>
     </div>
   </div>
 </footer>

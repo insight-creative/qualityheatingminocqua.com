@@ -18,6 +18,9 @@ module.exports = {
         'has-sub-menu-open',
         'expand',
         'collapse',
+        'parent-page-products',
+        'page-contact',
+        'page-id-a5de17d55a9b80cdac731fa24e6c61ab',
       ]
     })
   ]

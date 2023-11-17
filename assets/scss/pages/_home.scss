@@ -1,38 +1,3 @@
-.home-hero {
-  background-image: url("/images/background-images/home-hero-mobile.jpg");
-  position: relative;
-  z-index: 1;
-
-  @include breakpoint(md) {
-    background-image: url("/images/background-images/home-hero-laptop.jpg");
-  }
-  @include breakpoint(lg) {
-    background-image: url("/images/background-images/home-hero.jpg");
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    // background-color: $blue-overlay-70;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    );
-  }
-  .hero__inner {
-    padding: $ic-600 0;
-    @include breakpoint(md) {
-      padding: 0;
-    }
-    h1 {
-      color: $white;
-    }
-  }
-}
 .intro {
   @include breakpoint(sm) {
     background-image: url("/images/background-images/committed-to-quality.jpg");
@@ -41,6 +6,7 @@
     background-position: right center;
   }
 }
+
 .intro-overlay {
   height: 100%;
   width: 100%;
