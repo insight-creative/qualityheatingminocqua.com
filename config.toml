@@ -1,4 +1,4 @@
-baseURL = "https://www.greiberheating.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Quality Heating, Inc."
 enableRobotsTXT = true

@@ -60,6 +60,6 @@ There are many times when your heating & air conditioning problems don’t occur
 
   * System tuneups
 
-  <a class="btn btn--primary" href="/request-service/">Request Service</a>
+  <a class="btn btn--primary" href="/contact-us/">Request Service</a>
 
 </div>

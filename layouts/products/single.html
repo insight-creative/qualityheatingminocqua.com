@@ -37,10 +37,10 @@
                 <div class="products__card grid gap-sm">
                     <img class="grid-12 grid-4-md" src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="" width="640" height="360" loading="lazy">
                     <div class="grid-12 grid-8-md cards__details">
-                        <h3 class="h4">{{ .title }}</h6>
+                        <h3 class="h4">{{ .title }}</h3>
                         <p class="b">{{ .productCode }}</p>
                         <p class="padding-bottom-2">{{ .description }}</p>
-                        <h4 class="h5 no-margin">Top Features</h6>
+                        <h4 class="h5 no-margin">Top Features</h4>
                         <ul>
                             {{ range .features }}
                                 <li>{{ .feature }}</li>

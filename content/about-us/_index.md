@@ -51,7 +51,7 @@ Our knowledgeable technicians respond quickly to all calls 24 hours a day. Our t
 
 Fully licensed and insured, Quality Heating is well-equipped to meet your needs in residential installations, furnace replacements, air conditioning, hydronic systems, and air quality solutions. Understanding that each customer’s needs are unique, personalized and free professional estimates are offered, ensuring you receive the **ideal solution for your space**.
 
-Interested in exploring options for your furnace or air conditioner? [Contact us](/contact/) for a free estimate and experience the Quality Heating difference – where your comfort and satisfaction are our top priorities.
+Interested in exploring options for your furnace or air conditioner? [Contact us](/contact-us/) for a free estimate and experience the Quality Heating difference – where your comfort and satisfaction are our top priorities.
 
 <div class="breakout bg-black flow">
   <div>
@@ -83,6 +83,6 @@ Interested in exploring options for your furnace or air conditioner? [Contact us
 
   * System tuneups
 
-  <a class="btn btn--primary" href="/request-service/">Request Service</a>
+  <a class="btn btn--primary" href="/contact-us/">Request Service</a>
 
 </div>
