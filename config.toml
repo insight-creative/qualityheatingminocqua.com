@@ -8,7 +8,7 @@ summaryLength = 30
 #################### default parameters ################################
 
 [params]
-  logo = "/images/Greiber-Heating-Logo.png"
+  logo = "/uploads/Greiber-Heating-Logo.png"
   author = "Quality Heating, Inc."
   # Contact Information
   phone = "715-358-2644"
