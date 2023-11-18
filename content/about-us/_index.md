@@ -18,7 +18,7 @@ bbb_block:
   heading: Trust Quality Heating for Excellent Results
   body: Quality Heating has an A+ BBB rating as a heating and cooling company in Minocqua, WI. We’re proud to offer the best in a wide range of home comfort solutions. Contact us for service, we look forward to serving your comfort needs!
 featured:
-  - background: carrier-factory-authorized-dealer-background.jpg
+  - background: https://res.cloudinary.com/qualityheating/image/upload/v1700283861/carrier-factory-authorized-dealer-background_ciu7ud.jpg
     image: carrier-factory-authorized-dealer-logo.png
     image_alt: Carrier Factory Authorized Dealer Logo
     heading: Carrier Authorized Dealer

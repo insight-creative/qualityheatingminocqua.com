@@ -4,14 +4,10 @@
   z-index: 1;
 
   @include breakpoint(md) {
-    background-image: url("/uploads/background-images/cta-background-laptop.jpg");
+    background-image: url("https://res.cloudinary.com/qualityheating/image/upload/v1700283867/cta-background_hz3z34.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  @include breakpoint(lg) {
-    background-image: url("/uploads/background-images/cta-background.jpg");
   }
 
   &::after {

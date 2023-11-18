@@ -40,7 +40,7 @@ cards:
       heading: Same-Day Service
       body: For your convenience, we provide emergency 24-hour, same-day service, plus free in-home estimates.
 featured:
-  - background: carrier-factory-authorized-dealer-background.jpg
+  - background: https://res.cloudinary.com/qualityheating/image/upload/v1700283861/carrier-factory-authorized-dealer-background_ciu7ud.jpg
     image: carrier-factory-authorized-dealer-logo.png
     image_alt: Carrier Factory Authorized Dealer Logo
     heading: Carrier Authorized Dealer
