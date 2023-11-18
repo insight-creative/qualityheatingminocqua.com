@@ -1,5 +1,5 @@
 <svg>
-    <def>
+    <defs>
         <symbol id="financing" viewBox="0 0 384 512">
         <title>Financing</title>
             {{ partial "svg-icons/financing.svg" . }}

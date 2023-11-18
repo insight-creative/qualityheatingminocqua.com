@@ -4,14 +4,14 @@
   z-index: 1;
 
   @include breakpoint(md) {
-    background-image: url("/images/background-images/cta-background-laptop.jpg");
+    background-image: url("/uploads/background-images/cta-background-laptop.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   @include breakpoint(lg) {
-    background-image: url("/images/background-images/cta-background.jpg");
+    background-image: url("/uploads/background-images/cta-background.jpg");
   }
 
   &::after {

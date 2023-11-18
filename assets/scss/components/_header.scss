@@ -189,7 +189,7 @@
   }
 }
 
-.header__nav-list-item:last-of-type {
+.header__nav-list-item:nth-of-type(4) {
   margin-left: auto;
   padding-right: 0;
 }
@@ -305,6 +305,11 @@
 }
 
 .header__phone {
+  list-style-type: none;
+  margin-block-start: 0;
+}
+
+.header__phone-link {
   font-size: 1.1rem;
   font-weight: 500;
   margin-left: $ic-100;

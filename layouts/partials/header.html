@@ -37,7 +37,9 @@
               Request Service
           </a>
         </li>
-        <a class="header__phone flex flex-center" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc."><span class="icon-md icon-fill-primary">{{ partial "svg-icons/phone.svg" . }}</span>{{ .Site.Params.phone }}</a>
+        <li class="header__phone">
+          <a class="header__phone-link flex flex-center" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc."><span class="icon-md icon-fill-primary">{{ partial "svg-icons/phone.svg" . }}</span>{{ .Site.Params.phone }}</a>
+        </li>
       </ul>
     </nav>
     <div id="header__mobile-nav" class="header__mobile-nav bg-white">

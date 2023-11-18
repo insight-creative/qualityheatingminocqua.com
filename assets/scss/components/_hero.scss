@@ -61,7 +61,7 @@
   block-size: 100%;
   max-height: 1500px;
   overflow: visible;
-  background-image: url("/images/background-images/home-hero-mobile.jpg");
+  background-image: url("/uploads/background-images/home-hero-mobile.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -71,13 +71,13 @@
   z-index: 1;
 
   @include breakpoint(md) {
-    background-image: url("/images/background-images/home-hero-laptop.jpg");
+    background-image: url("/uploads/background-images/home-hero-laptop.jpg");
     block-size: 80vh;
     flex-direction: row;
   }
 
   @include breakpoint(lg) {
-    background-image: url("/images/background-images/home-hero.jpg");
+    background-image: url("/uploads/background-images/home-hero.jpg");
   }
 
   &::after {
