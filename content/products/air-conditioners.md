@@ -1,16 +1,14 @@
 ---
 title: Air Conditioners
-featuredImage: infinity-19vs-central-air-conditioner-24VNA9-no-energy-star.png
-image_alt: Carrier Air Conditioners
-page_title: Central AC Units
-description: Explore all Carrier Residential central air conditioning units to find the perfect solution for your home. Choose your model and contact us today.
-has_hero_image: true
-weight: 1
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Air Conditioners in Minocqua, WI
+  meta_description: Explore all Carrier Residential central air conditioning units to find the perfect solution for your home. Choose your model and contact us today.
+  featured_image: /infinity-19vs-central-air-conditioner-24VNA9-no-energy-star_jizrek.png
+  featured_image_alt: Carrier infinity 19VS central air conditioner
+weight: 1
 Product:
   productLine:
     - name: Infinity System
@@ -21,7 +19,7 @@ Product:
         - benefit: Premium humidity and temperature control
       products:
         - title: Infinity® 19VS Central Air Conditioner
-          image: infinity-19vs-central-air-conditioner-24VNA9.png
+          image: /infinity-19vs-central-air-conditioner-24VNA9_qy8lb6.png
           productCode: 24VNA9
           description: Up to 19 SEER for premium energy savings with premium comfort features
           features:
@@ -42,7 +40,7 @@ Product:
         - benefit: Enhanced humidity and temperature control
       products:
         - title: Performance™ 17 2-Stage Air Conditioner
-          image: performance-17-2-stage-air-conditioner-24TPA7-1.png
+          image: /performance-17-2-stage-air-conditioner-24TPA7-1_zet8r5.png
           productCode: 24TPA7
           description: Up to 17 SEER2 for enhanced energy savings with enhanced comfort features.
           features:
@@ -62,7 +60,7 @@ Product:
         - benefit: Budget friendly
       products:
         - title: Comfort™ 14 Central Air Conditioner
-          image: comfort-13-central-air-conditioner-24ABB3.png
+          image: /comfort-13-central-air-conditioner-24ABB3_tp39p8.png
           productCode: 24SCA4
           description: Up to 16 SEER2 for moderate energy savings with standard comfort features.
           features:

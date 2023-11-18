@@ -1,15 +1,14 @@
 ---
 title: Smart Thermostats
-featuredImage: carrier-3Lite-front-view.png
-image_alt: Carrier Smart Thermostats
-page_title: Smart Residential Thermostats
-description: Smart thermostats give you easy-to-use control of your home comfort anytime. Learn more about Carrier smart thermostats
-weight: 4
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Smart Thermostats in Minocqua, WI
+  meta_description: Smart thermostats give you easy-to-use control of your home comfort anytime. Learn more about Carrier smart thermostats
+  featured_image: /carrier-3Lite-front-view_gqmgos.png
+  featured_image_alt: Carrier 3Lite smart thermostat
+weight: 4
 Product:
   productLine:
     - name: Infinity System
@@ -19,7 +18,7 @@ Product:
         - benefit: Precise comfort management in up to 8 zones
       products:
         - title: Infinity® System Control (White)
-          image: carrier-infinity-control-white-front.png
+          image: /carrier-infinity-control-white-front_jagw7a.png
           productCode: SYSTXCCWIC01-B
           description: Designed exclusively for our Infinity system products for advanced comfort control and energy management.
           features:
@@ -31,7 +30,7 @@ Product:
             - feature: "Stream Music: No"
             - feature: "Hands-Free Calling: No"
         - title: Infinity® System Control (Black)
-          image: carrier-infinity-system-control-wi-fi-thermostat.png
+          image: /carrier-infinity-system-control-wi-fi-thermostat_zs7wlm.png
           productCode: SYSTXCCITC01-B
           description: Designed exclusively for our Infinity system products for advanced comfort control and energy management.
           features:
@@ -43,7 +42,7 @@ Product:
             - feature: "Stream Music: No"
             - feature: "Hands-Free Calling: No"
         - title: Smart Sensor for Infinity® Zoning Systems
-          image: infinity-smart-sensor-SYSTXZNSMS01.png
+          image: /infinity-smart-sensor-SYSTXZNSMS01_ikr53n.png
           productCode: SYSTXZNSMS01
           description: Smart sensors are optional upgrades for the wired remote room sensors used with Infinity® zoning systems.
           features:
@@ -55,7 +54,7 @@ Product:
             - feature: "Stream Music: No"
             - feature: "Hands-Free Calling: No"
         - title: Infinity® Zoning Panel
-          image: infinity-zoning-panel-SYSTXCC4ZC01.png
+          image: /infinity-zoning-panel-SYSTXCC4ZC01_r9zuhx.png
           productCode: SYSTXCC4ZC01
           description: Control the temperature and humidity in up to eight separate zones within your home.
           features:
@@ -67,7 +66,7 @@ Product:
             - feature: "Stream Music: No"
             - feature: "Hands-Free Calling: No"
         - title: Performance™ Four-Zone System
-          image: performance-4-zone-system-ZONECC4ZCN01.png
+          image: /performance-4-zone-system-ZONECC4ZCN01_sfrxd5.png
           productCode: ZONECC4ZCN01
           description: Full-featured zoning control for up to four separate zones.
           features:

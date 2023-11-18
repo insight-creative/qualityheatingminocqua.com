@@ -8,7 +8,7 @@
   color: #fff;
   cursor: pointer;
   padding: $ic--100 $ic-400;
-  height: auto;
+  block-size: auto;
   border: none;
   border-radius: $radius;
   background-size: 300% 100%;
@@ -38,8 +38,8 @@
 
 .btn-external {
   svg {
-    width: 15px;
-    height: 15px;
+    inline-size: 15px;
+    block-size: 15px;
     fill: $white;
     stroke: $white;
     margin-left: 15px;

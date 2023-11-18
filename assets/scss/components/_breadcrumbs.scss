@@ -8,7 +8,7 @@
 .breadcrumbs__inner {
   display: flex;
   flex-wrap: nowrap;
-  height: 20px;
+  block-size: 20px;
   overflow: hidden;
   align-items: center;
 }
@@ -17,23 +17,15 @@
   position: relative;
   top: -2px;
   fill: $light-gray;
-  width: $ic-100;
-  height: $ic-100;
+  inline-size: $ic-100;
+  block-size: $ic-100;
 }
 
 .breadcrumbs__nav {
-  display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
   overflow-y: hidden;
   padding: $ic-100 0;
-  width: 100%;
   margin: 0;
-
-  @include breakpoint(md) {
-    position: relative;
-    top: 8px;
-  }
 }
 
 .breadcrumbs__list-item {

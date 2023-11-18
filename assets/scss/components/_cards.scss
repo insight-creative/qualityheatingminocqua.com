@@ -11,8 +11,8 @@
   }
 
   &__svg {
-    width: $ic-500;
-    height: $ic-500;
+    inline-size: $ic-500;
+    block-size: $ic-500;
     fill: $primary-color;
     stroke: $primary-color;
   }

@@ -1,26 +1,27 @@
 logo: /uploads/quality-heating-logo-stacked.svg
 footer_logo: /uploads/quality-heating-logo-stacked.svg
-business_name: Essentia
-phone: 555-555-5555
-fax: 
-email: email@emailaddress.com
+business_name: Quality Heating, Inc.
+phone: 715-358-2644
+fax: 715-358-1995
+email:
 address:
-  city: Green Bay
+  city: Minocqua
   state: WI
-  street: 1816 Sal St.
-  zip: 54302
-google_maps_url: https://www.google.com/maps
-google_maps_iframe: <iframe title="Google maps location of Insight Creative, Inc. in Green Bay WI" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11385.733072687639!2d-87.9928414!3d44.4857883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e4dd4df188dd%3A0xcaf53222c81d4a5c!2sInsight%20Creative%2C%20Inc.!5e0!3m2!1sen!2sus!4v1680661926581!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  street: 9752 West Lake Avenue
+  zip: 54548
+google_maps_url: https://maps.app.goo.gl/CVhd4GvP2so3BCA49
+google_maps_iframe: <iframe title="Google Maps location of Quality Heating, Inc." src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5554.497585417253!2d-89.718808!3d45.886337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d55953d15632edf%3A0x39141d1d4ccddcf8!2sQuality%20Heating%20Inc!5e0!3m2!1sen!2sus!4v1700267019620!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+hours: "Mon-Fri: 8:00am - 5:00pm<br>24 hour emergency service"
 social_media:
   - title: Facebook
-    link: https://www.facebook.com/insightcreativeinc
+    link: 
   - title: LinkedIn
-    link: https://www.linkedin.com/company/insight-creative-inc./mycompany/
+    link: 
   - title: YouTube
-    link: https://www.youtube.com/channel/UCDE7J9ImgM3JVgT030sM3VA
+    link: 
   - title: Instagram
-    link: https://www.instagram.com/insightwi/
+    link: 
   - title: Twitter
-    link: https://twitter.com/insightwi
+    link: 
   - title: TikTok
-    link: https://www.tiktok.com/
+    link: 

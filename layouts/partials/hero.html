@@ -15,25 +15,12 @@
     {{ partial "request-service" . }}
   </div>
 </div>
-{{ else if eq .Params.has_hero_image "true" }}
+{{ else }}
 {{ $heroClass := lower .Page.Title }}
 <div class="hero hero--{{ anchorize $heroClass }}">
-  {{ $heroimage := (.Resources.GetMatch (index .Params.hero_image.hero_image_jpg)) }}
-  {{ $herosmallwebp := $heroimage.Resize "600x q80 webp" }}
-  {{ $heromediumwebp := $heroimage.Resize "1000x q80 webp" }}
-  {{ $herolargewebp := $heroimage.Resize "1400x q80 webp" }}
-  {{ $heroextralargewebp := $heroimage.Resize "1800x q80 webp" }}
-  {{ $herosmalljpg := $heroimage.Resize "600x q80" }}
-  {{ $heromediumjpg := $heroimage.Resize "1000x q80" }}
-  {{ $herolargejpg := $heroimage.Resize "1400x q80" }}
-  {{ $heroextralargejpg := $heroimage.Resize "1800x q80" }}
-    <picture> 
-      <source sizes="100vw" srcset="{{ .Params.hero_image.hero_image_avif_600 }} 600w, {{ .Params.hero_image.hero_image_avif_1000 }} 1000w, {{ .Params.hero_image.hero_image_avif_1400 }} 1400w, {{ .Params.hero_image.hero_image_avif }} 1600w" type="image/avif" > 
-      <source sizes="100vw" srcset="{{ $herosmallwebp.RelPermalink }} 600w, {{ $heromediumwebp.RelPermalink }} 1000w, {{ $herolargewebp.RelPermalink }} 1400w, {{ $heroextralargewebp.RelPermalink }} 1600w" type="image/webp" > 
-      <source sizes="100vw" srcset="{{ $herosmalljpg.RelPermalink }} 600w, {{ $heromediumjpg.RelPermalink }} 1000w, {{ $herolargejpg.RelPermalink }} 1400w, {{ $heroextralargejpg.RelPermalink }} 1600w" type="image/jpg" > 
-      <img class="hero__image" src="{{ $heroimage.RelPermalink }}" alt="" width="{{ $heroimage.Width }}" height="{{ $heroimage.Height }}">
-    </picture>
-  </picture>
+  {{ with .Params.hero.image }}
+    {{ partial "responsive-image-hero" . }}
+  {{ end }}
   <div class="hero__content">
     <div class="wrapper text-align-center text-color-white flow">
       {{ if .Params.hero.heading }}
@@ -56,18 +43,5 @@
 </div>
 <div class="bg-primary">
   {{ partial "breadcrumbs" . }}
-</div>
-{{ else }}
-<div class="hero hero--small wrapper padding-top-6">
-  {{ partial "breadcrumbs" . }}
-  {{ if (isset .Params "hero_title") }}
-    <h1>
-      {{ .Params.hero_title }}
-    </h1>
-    {{ else }}
-    <h1>
-      {{ .Page.Title }}
-    </h1>
-    {{ end }}
 </div>
 {{ end }}

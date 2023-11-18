@@ -17,7 +17,11 @@
         <div class="w-100 w-50-m">
             {{ with .Params.cards}}
             <div class="cover-image rounded-image">
-                {{ partial "next-gen-jpg" . }}
+                {{ if .image.enabled }}
+                    {{ with .image }}
+                        {{ partial "responsive-image-square" . }}
+                    {{ end }}
+                {{ end }}
             </div>
             {{ end }}
         </div>

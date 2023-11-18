@@ -1,9 +1,10 @@
 ---
 title: Air Purifiers
-featuredImage: infinity-air-purifier-DCAPA.png
-image_alt: Carrier Air Purifiers
-page_title: Whole House Air Purifiers
-description: Because your indoor air can be more polluted than you imagine, a whole house air purifier is a key component to keep your air cleaner
+seo:
+  page_title: Whole House Air Purifiers in Minocqua, WI
+  meta_description: Because your indoor air can be more polluted than you imagine, a whole house air purifier is a key component to keep your air cleaner
+  featured_image: /infinity-air-purifier-DCAPA_nbsvg2.png
+  featured_image_alt: Carrier Air Purifiers
 weight: 4
 Product:
   productLine:
@@ -15,7 +16,7 @@ Product:
         - benefit: Efficiency rating of 15 MERV
       products:
         - title: Infinity® Air Purifier
-          image: infinity-air-purifier-DCAPA.png
+          image: /infinity-air-purifier-DCAPA_nbsvg2.png
           productCode: DGAPA
           description: Whole-home air purifier that uses Captures & Kills® technology to trap particles and inactivate them with an electrical charge.
           features:
@@ -33,7 +34,7 @@ Product:
         - benefit:
       products:
         - title: Comfort™ EZ Flex Cabinet Air Filter
-          image: comfort-ez-flex-cabinet-air-filter-EZXCAB.png
+          image: /comfort-ez-flex-cabinet-air-filter-EZXCAB_yddnsv.png
           productCode: EZXCAB
           description: A convenient and affordable way to help improve your indoor air quality and system performance.
           features:

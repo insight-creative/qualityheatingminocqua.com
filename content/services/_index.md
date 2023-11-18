@@ -1,11 +1,20 @@
 ---
 title: Services
+seo:
+  page_title: Heating and Cooling Repair Services in Minocqua, WI
+  meta_description: Whether it's routine maintenance or emergency repairs, our team of certified HVAC professionals is dedicated to ensuring comfort in your home all year round. Call us today!
+  featured_image: /services-hero-2500_nvfeko.jpg
+  featured_image_alt: Carrier salesperson meeting with homeowners at kitchen table
+
 page_title: Heating and Cooling Repair Services
 description: "Greiber Heating & Sheet Metal offers commercial, residential & industrial HVAC, geothermal heating, cooling & ventilation services in Waunakee, Wisconsin."
 
 hero: 
   heading: Complete Heating and Cooling Services
   body: Whether it's routine maintenance or emergency repairs, our team of certified HVAC professionals is dedicated to ensuring comfort in your home all year round.
+  image: 
+    image_url: /services-hero-2500_nvfeko.jpg
+    image_alt: Carrier salesperson meeting with homeowners at kitchen table
 
 has_hero_image: "true"
 

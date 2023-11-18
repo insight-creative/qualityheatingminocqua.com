@@ -11,7 +11,7 @@
                     {{ .Content }}
                 </div>
                 <div class="w-100 w-40-m">
-                    <img src="/images/products/{{ .Params.featuredImage }}" alt="{{ .Params.image_alt }}" class="product-featured-image" width="640" height="360">
+                    <img src="https://res.cloudinary.com/qualityheating/image/upload/f_auto,q_auto{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}" class="product-featured-image" width="640" height="360">
                 </div> 
             </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="products__wrapper">
             {{ range .products }}
                 <div class="products__card grid gap-sm">
-                    <img class="grid-12 grid-4-md" src="{{.Site.BaseURL}}/images/products/{{ .image }}" alt="" width="640" height="360" loading="lazy">
+                    <img class="grid-12 grid-4-md" src="https://res.cloudinary.com/qualityheating/image/upload/f_auto,q_auto{{ .image }}" alt="" width="640" height="360" loading="lazy">
                     <div class="grid-12 grid-8-md cards__details">
                         <h3 class="h4">{{ .title }}</h3>
                         <p class="b">{{ .productCode }}</p>

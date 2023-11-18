@@ -1,16 +1,14 @@
 ---
 title: Heat Pumps
-featuredImage: infinity-15-heat-pump-25HNB5.png
-image_alt: Carrier Heat Pumps
-page_title: Heat Pumps | Heat & Cool Your Home
-description: Heat pump systems provide versatile heating, cooling, and humidity control. Explore all Carrier Residential heat pumps to find yours.
-has_hero_image: true
-weight: 3
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Heat Pumps in Minocqua, WI
+  meta_description: Heat pump systems provide versatile heating, cooling, and humidity control. Explore all Carrier Residential heat pumps to find yours.
+  featured_image: /infinity-15-heat-pump-25HNB5_pcahu5.png
+  featured_image_alt: Carrier infinity 15 heat pump
+weight: 3
 Product:
   productLine:
     - name: Infinity System
@@ -21,7 +19,7 @@ Product:
         - benefit: Premium humidity and temperature control
       products:
         - title: Infinity® 24 Heat Pump With Greenspeed® Intelligence
-          image: infinity-24-heat-pump-with-greenspeed-intelligence-25VNA4.png
+          image: /infinity-24-heat-pump-with-greenspeed-intelligence-25VNA4_w1lp2k.png
           productCode: 25VNA4
           description: Our highest efficiency and most advanced heat pump with up to 22 SEER2 for premium energy savings with extremely quiet performance and premium comfort features.
           features:
@@ -35,7 +33,7 @@ Product:
             - feature: "Silencer System II Design: Yes"
             - feature: "Compressor Sound Blanket: Yes"
         - title: Infinity® 18VS Heat Pump
-          image: infinity-18VS-heat-pump-25VNA8.png
+          image: /infinity-18VS-heat-pump-25VNA8_hzyigi.png
           productCode: 25VNA8
           description: Up to 18.5 SEER2 for premium energy savings with premium comfort features
           features:
@@ -57,7 +55,7 @@ Product:
         - benefit: Quiet comfort
       products:
         - title: Performance™ 18 Compact Heat Pump
-          image: performance-18-compact-heat-pump-38MURA.png
+          image: /performance-18-compact-heat-pump-38MURA_brc9t2.png
           productCode: 38MURA
           description: Up to 18 SEER2 for enhanced energy savings with premium comfort features.
           features:
@@ -79,7 +77,7 @@ Product:
         - benefit: Budget friendly
       products:
         - title: Comfort™ 15 Heat Pump
-          image: comfort-15-heat-pump-25SCA5.png
+          image: /comfort-15-heat-pump-25SCA5_sc13tw.png
           productCode: 25SCA5
           description: Up to 15.2 SEER2 for moderate energy savings with standard comfort features.
           features:

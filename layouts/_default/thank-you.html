@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="block">
+    <div class="wrapper flow">
+        <div>
+            <h2 class="no-margin">Thank you for your message!</h2>
+            <div class="underline"></div>
+        </div>
+        <p>A {{ .Site.Data.site_settings.business_name }} team member will contact you as soon as possible. If you are in need of emergency service, please call us at <a href="tel:{{ .Site.Data.site_settings.phone }}">{{ .Site.Data.site_settings.phone }}</a>.</p>
+    </div>
+</section>
+{{ end }}

@@ -1,16 +1,14 @@
 ---
 title: Ductless Systems
-featuredImage: infinity-heat-pump-with-basepan-heater-38MPRA.png
-image_alt: Carrier Ductless Systems
-page_title: Ductless AC & Mini Split Systems
-description: Because they don't need ducts inside your walls to reach your rooms, ductless air conditioners work wherever you need them.
-has_hero_image: true
-weight: 4
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Ductless Systems in Minocqua, WI
+  meta_description: Because they don't need ducts inside your walls to reach your rooms, ductless air conditioners work wherever you need them.
+  featured_image: /infinity-heat-pump-with-basepan-heater-38MPRA_czfghq.png
+  featured_image_alt: Carrier inifinity heat pump with basepan heater
+weight: 4
 Product:
   productLine:
     - name: Performance Series
@@ -21,7 +19,7 @@ Product:
         - benefit: Quiet indoor comfort—(minimum 27 dBA)
       products:
         - title: Performance™ Heat Pump
-          image: performance-series-heat-pump-38MARB.png
+          image: /performance-series-heat-pump-38MARB_tgwwqj.png
           productCode: 38MARB
           description: Single-zone system with up to 28.1 SEER2 and 12.4 HSPF2 for premium energy savings.
           features:
@@ -33,7 +31,7 @@ Product:
             - feature: "Application: Residential"
             - feature: "Wireless Remote: Not applicable"
         - title: Performance™ Multi-Zone Heat Pump with Basepan Heater
-          image: performance-multi-zone-heat-pump-with-basepan-heater-38MGR.png
+          image: /performance-multi-zone-heat-pump-with-basepan-heater-38MGR_nmyp03.png
           productCode: 38MGRB
           description: Multi-zone systems with up to 23.9 SEER2 for premium cooling energy savings & 10.5 HSPF2 for enhanced heating energy savings.
           features:
@@ -45,7 +43,7 @@ Product:
             - feature: "Application: Residential"
             - feature: "Wireless Remote: Not applicable"
         - title: Performance™ Ducted Indoor Unit
-          image: performance-ducted-indoor-unit-40MBDQ.png
+          image: /performance-ducted-indoor-unit-40MBDQ_nndh8b.png
           productCode: 40MBDQ
           description: Our ducted indoor unit is compatible with both single and multi-zone ductless systems.
           features:
@@ -57,7 +55,7 @@ Product:
             - feature: "Application: Residential"
             - feature: "Wireless Remote: Yes"
         - title: Performance™ Floor Console Indoor Unit
-          image: performance-floor-console-indoor-unit-40MBFQ.png
+          image: /performance-floor-console-indoor-unit-40MBFQ_fyqfxf.png
           productCode: 40MBFQ
           description: Our floor console indoor unit is compatible with both single and multi-zone ductless systems.
           features:
@@ -69,7 +67,7 @@ Product:
             - feature: "Application: Residential"
             - feature: "Wireless Remote: Yes"
         - title: Performance™ High Wall Indoor Unit
-          image: performance-high-wall-indoor-unit-40MAHB.png
+          image: /performance-high-wall-indoor-unit-40MAHB_wghbtl.png
           productCode: 40MAHB
           description: Designed for a high wall installation and is compatible with both single and multi-zone ductless systems.
           features:

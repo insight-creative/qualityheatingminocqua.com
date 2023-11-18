@@ -10,8 +10,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
     background-color: $blue-overlay-95;
     background-image: linear-gradient(
       90deg,
@@ -84,10 +84,10 @@
     max-width: 100%;
 
     img {
-      width: 50%;
+      inline-size: 50%;
       padding: $ic-200;
       max-width: 16rem;
-      height: 100%;
+      block-size: 100%;
     }
   }
 }

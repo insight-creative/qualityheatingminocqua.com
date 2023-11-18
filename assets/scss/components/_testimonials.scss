@@ -1,7 +1,7 @@
 .testimonial__icon {
   background-color: $primary-color;
-  height: $ic-700;
-  width: $ic-700;
+  block-size: $ic-700;
+  inline-size: $ic-700;
   border-radius: 50%;
   position: relative;
   top: -35px;
@@ -9,8 +9,8 @@
   place-items: center;
 
   svg {
-    width: $ic-400;
-    height: $ic-400;
+    inline-size: $ic-400;
+    block-size: $ic-400;
     fill: $white;
   }
 }

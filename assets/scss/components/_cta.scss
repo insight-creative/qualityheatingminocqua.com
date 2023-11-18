@@ -18,8 +18,8 @@
     position: absolute;
     z-index: -1;
     content: "";
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
     top: 0;
     left: 0;
     background-color: $blue-overlay-70;
@@ -48,10 +48,10 @@
   }
 
   .business-info {
-    width: 100%;
+    inline-size: 100%;
 
     &__wrapper {
-      width: 100%;
+      inline-size: 100%;
     }
 
     a,

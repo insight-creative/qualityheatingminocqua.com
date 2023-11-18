@@ -1,5 +1,10 @@
 ---
 title: Home
+seo:
+  page_title: Heating and Cooling Services in Minocqua, WI
+  meta_description: Quality Heating, Inc. has over 30 years of experience providing HVAC services in Minocqua, WI. Our trained technicians are here to help you. Call us today!
+  featured_image: /quality-home-social-preview_tbrgla.jpg
+  featured_image_alt:
 page_title: Heating and Cooling Services in Minocqua, WI
 description: Greiber Heating & Sheet Metal offers residential HVAC repair, furnace, air conditioning or cooling service plus quality Carrier equipment in Waunakee, Wisconsin
 
@@ -17,23 +22,13 @@ intro:
     button_url: /about/
     button_text: Learn More About Us
     open_in_new_tab: false
-awards:
-  - image: 2021-carrier-presidents-award-grayscale.jpg
-    alt: 2021 Carrier Presidents Award Winner
-  - image: 2020-carrier-presidents-award-grayscale.jpg
-    alt: 2020 Carrier Presidents Award Winner
-  - image: 2019-carrier-presidents-award-grayscale.jpg
-    alt: 2019 Carrier Presidents Award Winner
-  - image: NATE-Certified-Technicians.jpg
-    alt: NATE Certified Technicians Logo
-  - image: BBB-Accredited.jpg
-    alt: BBB Accredited Business
-  - image: National-Federation-of-Independent-Business.jpg
-    alt: National Federation of Independent Business
 cards:
   cards_row: false
   cards_stacked: true
-  image: dealer-homeowner-outdoor
+  image: 
+    enabled: true
+    image_url: /dealer-homeowner-outdoor_hd2jq7.jpg
+    image_alt: Carrier technician with homeowner outdoors in front of carrier air conditioner
   card_item:
     - icon: service
       heading: Service for All Makes and Models

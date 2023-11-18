@@ -1,16 +1,14 @@
 ---
 title: Boilers
-featuredImage: hc-series.png
-image_alt: Carrier Boilers
-page_title: Residential Boilers
-description: In homes with radiant heat, our gas- and oil-fired boilers efficiently power your system and spread warmth. Find a boiler today.
-has_hero_image: true
-weight: 6
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Boilers in Minocqua, WI
+  meta_description: In homes with radiant heat, our gas- and oil-fired boilers efficiently power your system and spread warmth. Find a boiler today.
+  featured_image: /hc-series_zt7dh0.png
+  featured_image_alt: IBC HC series boilers
+weight: 6
 Product:
   productLine:
     - name: 
@@ -21,7 +19,7 @@ Product:
         - benefit:
       products:
         - title: Comfort™ 84 Gas-Fired Boiler
-          image: comfort-82-gas-fired-boiler-BWB.png
+          image: /comfort-82-gas-fired-boiler-BWB_cjoqov.png
           productCode: BWB
           description: Up to 84% AFUE for standard moderate savings with standard comfort features.
           features:

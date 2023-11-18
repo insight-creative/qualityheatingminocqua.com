@@ -2,7 +2,7 @@
   @include breakpoint(md) {
     position: absolute;
     bottom: -150px;
-    width: 100%;
+    inline-size: 100%;
   }
 
   @include breakpoint(lg) {
@@ -29,29 +29,12 @@
     padding: $ic-600;
   }
 
-  .contact-form__form-group label {
-    font-size: $ic-200;
-  }
-
-  .contact-form__form-group input,
-  .contact-form__form-group textarea {
-    background-color: $light-gray;
-    border: none;
-    width: 100%;
-    padding: $ic-100 $ic-300;
-    margin-bottom: $ic-100;
-
-    &:focus {
-      outline: 1px solid $primary-color;
-    }
-  }
-
   &__form-group input {
-    height: $ic-600;
+    block-size: $ic-600;
   }
 
   &__form-group textarea {
-    height: $ic-1000;
+    block-size: $ic-1000;
   }
 
   &__btn {
@@ -61,10 +44,65 @@
 
 .contact {
   .contact-form {
-    height: 100%;
+    block-size: 100%;
   }
 }
 
 .page-contact .contact-form {
   border-radius: $radius;
+}
+
+.contact-form__row-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+
+    .contact-form__form-group {
+      flex: 50%;
+    }
+
+    .contact-form__form-group:nth-of-type(2) {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.contact-form__form-group label {
+  font-size: $ic-100;
+  font-weight: 700;
+}
+
+.contact-form__btn {
+  border: none;
+}
+
+.contact-form__form-group input,
+.contact-form__form-group textarea,
+.contact-form__form-group select {
+  background-color: $light-gray;
+  border-radius: 8px;
+  border: none;
+  inline-size: 100%;
+  padding: $ic-100 $ic-200;
+  margin-bottom: $ic-100;
+  block-size: $ic-700;
+
+  &:focus {
+    outline: 2px solid $primary-color;
+  }
+}
+
+.contact-form__form-group textarea {
+  block-size: $ic-1000;
+}
+
+form.hidden {
+  display: none;
+}
+
+.contact-sidebar iframe {
+  inline-size: 100%;
+  block-size: 350px;
 }

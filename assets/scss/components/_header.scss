@@ -139,14 +139,14 @@
 
 .header__logo {
   display: block;
-  height: 45px;
-  width: 250px;
+  block-size: 45px;
+  inline-size: 250px;
   background-image: url("/uploads/quality-heating-logo.svg");
   background-size: 250px 45px;
 
   @include breakpoint(md) {
-    height: 55px;
-    width: 300px;
+    block-size: 55px;
+    inline-size: 300px;
     background-size: 300px 55px;
   }
 }
@@ -283,7 +283,7 @@
 .header__sub-menu-list {
   padding: $ic-300 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-inline-size: 100%;
 }
 

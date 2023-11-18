@@ -1,16 +1,14 @@
 ---
 title: Furnaces
-featuredImage: performance-96-gas-furnace-59TP6.png
-image_alt: Carrier Furnaces
-page_title: Residential Furnaces
-description: Our quiet, energy-efficient furnaces are designed to provide warmth in winter and to circulate clean and refreshing air. Find a furnace today.
-has_hero_image: true
-weight: 2
-
 menu:
   main:
     parent: Products
-
+seo:
+  page_title: Furnaces in Minocqua, WI
+  meta_description: Our quiet, energy-efficient furnaces are designed to provide warmth in winter and to circulate clean and refreshing air. Find a furnace today.
+  featured_image: /performance-96-gas-furnace-59TP6_s1zuls.png
+  featured_image_alt: Carrier performance 96 gas furnace
+weight: 2
 Product:
   productLine:
     - name: Infinity System
@@ -21,7 +19,7 @@ Product:
         - benefit: Excellent humidity control
       products:
         - title: Infinity® 98 Gas Furnace With Greenspeed™ Intelligence
-          image: infinity-98-gas-furnace-with-greenspeed-intelligence-59MN7.png
+          image: /infinity-98-gas-furnace-with-greenspeed-intelligence-59MN7_ymupld.png
           productCode: 59MN7
           description: ENERGY STAR® certified. Our highest efficiency and most advanced furnace with up to 98.5% AFUE for premium energy savings with excellent humidity control and premium comfort
           features:
@@ -39,7 +37,7 @@ Product:
         - benefit: Moderate humidity control
       products:
         - title: Performance™ 96 Gas Furnace
-          image: performance-96-gas-furnace-59TP6.png
+          image: /performance-96-gas-furnace-59TP6_s1zuls.png
           productCode: 59TP6
           description: ENERGY STAR® certified. Up to 96.5% AFUE for premium energy savings with enhanced comfort features.
           features:
@@ -57,7 +55,7 @@ Product:
         - benefit: Basic humidity control
       products:
         - title: Comfort™ 80 Gas Furnace
-          image: comfort-80-gas-furnace-58sb.png
+          image: /comfort-80-gas-furnace-58sb_antrkv.png
           productCode: 58SB0
           description: 80% AFUE for moderate energy savings with standard comfort features.
           features:

@@ -17,7 +17,7 @@
                 <li class="products-list__item">
                     <a class="products-list__link" href="{{ .Permalink }}">
                         <h3 class="h5">{{ .Title }}</h3>
-                        <img src="{{ .Site.BaseURL }}images/products/{{ .Params.featuredImage }}" alt="{{ .Params.image_alt }}" width="640" height="360" loading="lazy">
+                        <img src="https://res.cloudinary.com/qualityheating/image/upload/f_auto,q_auto{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}" width="640" height="360" loading="lazy">
                     </a>
                 </li>
                 {{ end }}
