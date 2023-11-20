@@ -13,6 +13,11 @@
 
 .call-us-banner__phone {
     color: $white;
+
+    &:hover, 
+    &:focus {
+        color: $black;
+    }
 }
 
 .call-us-banner .icon-sm {
