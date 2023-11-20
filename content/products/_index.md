@@ -12,7 +12,7 @@ has_hero_image: "true"
 
 hero: 
   heading: Heating and Cooling Products
-  body: Maintain the comfort of your home with high-efficiency HVAC systems
+  body: Maintain the comfort of your home with high-efficiency HVAC systems.
   image: 
     image_url: /products-hero-2500_fborwg.jpg
     image_alt: Carrier air conditioning unit

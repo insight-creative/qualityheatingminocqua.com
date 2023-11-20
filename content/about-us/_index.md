@@ -10,7 +10,7 @@ seo:
   featured_image_alt: Carrier technician talking with homeowner while checking compression of air conditioner
 hero: 
   heading: Heating and Cooling Company in Minocqua, WI
-  body: Professionally trained technicians servicing all brands, makes and models
+  body: Professionally trained technicians servicing all brands, makes and models.
   image: 
     image_url: /about-hero-2500_ubaahv.jpg
     image_alt: Carrier technician talking with homeowner while checking compression of air conditioner
