@@ -36,11 +36,13 @@
 }
 
 .hero__service-request {
-  position: relative;
-  z-index: 2;
-  margin-top: $ic-400;
+  display: none;
 
   @include breakpoint(md) {
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-top: $ic-400;
     position: absolute;
     bottom: 0;
     right: 0;
