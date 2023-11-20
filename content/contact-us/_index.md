@@ -7,8 +7,8 @@ seo:
   featured_image_alt: Carrier salesperson meeting with homeowners outdoors
 
 hero: 
-  heading: Heating and Cooling Company in Minocqua, WI
-  body: Professionally trained technicians servicing all brands, makes and models
+  heading: Contact Us
+  body: Whether it's routine maintenance or emergency repairs, our team of certified HVAC professionals is here to help you.
   image: 
     image_url: /contact-hero-2500_ql7kla.jpg
     image_alt: Carrier salesperson meeting with homeowners outdoors
