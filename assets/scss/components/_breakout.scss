@@ -15,7 +15,7 @@
         transform: translate(16px, 16px);
     }
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
         margin-inline: -100px;
 
         ul {

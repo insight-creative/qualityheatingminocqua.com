@@ -38,6 +38,7 @@
 
 .products__card img {
   inline-size: 80%;
+  max-inline-size: clamp(350px, 4vw, 500px);
   margin: auto;
 }
 

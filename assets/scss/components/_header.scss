@@ -1,11 +1,15 @@
 .header {
   inline-size: 100%;
   position: fixed;
-  inset-block-start: 0;
+  inset-block-start: 32px;
   inset-inline-start: 0;
   z-index: 9;
   box-shadow: 0 1px 6px rgba(0,0,0,.1);
   padding-block: .5rem;
+
+  @include breakpoint(md) {
+    inset-block-start: 0;
+  }
 }
 
 // Start mobile menu styles
@@ -139,12 +143,12 @@
 
 .header__logo {
   display: block;
-  block-size: 45px;
-  inline-size: 250px;
+  block-size: 36px;
+  inline-size: 200px;
   background-image: url("/uploads/quality-heating-logo.svg");
-  background-size: 250px 45px;
+  background-size: 200px 36px;
 
-  @include breakpoint(md) {
+  @include breakpoint(lg) {
     block-size: 55px;
     inline-size: 300px;
     background-size: 300px 55px;
@@ -184,7 +188,7 @@
     position: static;
     list-style-type: none;
     margin-top: 0;
-    padding: $ic-100 $ic-200;
+    padding: $ic-100;
     display: inline-block;
   }
 }

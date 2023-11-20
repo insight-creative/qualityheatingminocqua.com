@@ -1,6 +1,9 @@
 {{ "<!-- Header -->" | safeHTML }}
 <a class="screen-reader-skip-to-content" href="#main-content" tabindex="0" aria-label="Skip to main content">Skip to main content</a>
 <a class="screen-reader-skip-to-content" href="#footer" tabindex="0" aria-label="Skip to footer content">Skip to footer content</a>
+<div class="call-us-banner bg-primary text-align-center">
+  <a class="call-us-banner__phone flex flex-center flex-justify-center" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc."><span class="icon-sm icon-fill-primary">{{ partial "svg-icons/phone.svg" . }}</span> Call Us: {{ .Site.Params.phone }}</a>
+</div>
 <header class="header bg-white">
   <div class="header__wrapper wrapper-lg">
     <div class="header__logo-wrap">
@@ -79,7 +82,6 @@
     </button>
   </div>
 </header>
-
 {{ define "menu-node" }}
   <li class="header__sub-menu-item list-style-none">
     {{ if .HasChildren }}
