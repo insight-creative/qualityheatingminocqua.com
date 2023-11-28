@@ -12,22 +12,10 @@
 
 .contact-form {
   background-color: $white;
-  padding: $ic-300;
+  padding: $ic-600;
+  border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
-  border-bottom-right-radius: $radius;
   box-shadow: 8px 8px 48px rgba(25, 25, 96, 0.25);
-
-  @include breakpoint(md) {
-    border-bottom-right-radius: 0;
-  }
-
-  @include breakpoint(lg) {
-    padding: $ic-300 $ic-600;
-  }
-
-  @include breakpoint(xl) {
-    padding: $ic-600;
-  }
 
   &__form-group input {
     block-size: $ic-600;

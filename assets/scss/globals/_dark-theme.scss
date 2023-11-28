@@ -1,7 +1,19 @@
 @media (prefers-color-scheme: dark) {
     body {
-       background-color: #0b0907;
-       color: $white;
+       background-color: $black-2;
+       color: $light-gray;
+    }
+
+    .bg-gray, 
+    .contact-form {
+        background-color: $black-2;
+    }
+
+    .bg-white,
+    .testimonial__col,
+    .single-product .bg-gray {
+        background-color: $black;
+        color: $light-gray;
     }
 
     .header__mobile-nav-link,
@@ -9,20 +21,24 @@
     .header__nav-list-link,
     .header__sub-menu-link,
     .footer a {
-        color: $white;
+        color: $light-gray;
     }
 
-    .bg-gray {
-        background-color: $black-2;
+    .header__logo {
+        background-image: url("/uploads/quality-heating-logo-white.svg");
     }
 
-    .bg-white {
-        background-color: #1F1914;
+    .header__phone-link {
+        color: $light-gray;
     }
 
-    .card,
-    .image-card {
-        border: 1px solid $primary-color;
+    .intro-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.7) 50%,
+          rgba(0, 0, 0, 0.1) 100%
+        );
     }
 
     .border-top-white,
@@ -35,5 +51,14 @@
     .contact-form__form-group select {
         border: 2px solid $primary-color;
         background-color: $black;
+    }
+
+    .parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs svg {
+        fill: $light-gray;
+      }
+      
+    .parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs__list-item,
+    .parent-page-products:not(.page-id-a5de17d55a9b80cdac731fa24e6c61ab) .breadcrumbs__list-item a {
+        color: $light-gray;
     }
 }

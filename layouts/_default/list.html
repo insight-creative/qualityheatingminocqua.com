@@ -19,6 +19,44 @@
     {{ if .Params.featured }}
         {{ partial "full-width-feature" . }}
     {{ end }}
+    {{ if .Params.benefits }}
+        <div class="block bg-primary">
+            <div class="wrapper-lg flow text-color-white text-align-center">
+                <h2 class="max-width-none">Our Benefits</h2>
+                <div class="auto-flexbox-grid gap-md">
+                    {{ range .Params.benefits }}
+                    <div class="benefit flow ">
+                        <img src="{{ .icon }}" alt="{{ .benefit }} icon" class="benefit__image" width="75" height="75">
+                        <p class="h6 font-size-sm text-white text-center">{{ .benefit }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    {{ if eq .Title "Careers" }}
+    <section class="block" id="open-positions" aria-labelledby="Open Positions">
+        <div class="wrapper flow">
+            <h2 id="Open Positions" class="text-center">Open Positions</h2>
+            <div class="positions-list no-padding max-width-none">
+                {{ range first 1 .Pages }}
+                    <details class="position card list-style-none max-width-none flow" open role="group">
+                        <summary class="position__heading h4 fw-700" tabindex="0">{{ .Title }}</summary>
+                        <p>{{ .Params.SEO.meta_description }}</p>
+                        <a href="{{ .RelPermalink }}" class="btn btn--primary">View Job Listing</a>
+                    </details>
+                {{ end }}
+                {{ range after 1 .Pages }}
+                    <details class="position card list-style-none max-width-none flow" role="group">
+                        <summary class="position__heading h4 fw-700" tabindex="0">{{ .Title }}</summary>
+                        <p>{{ .Params.SEO.meta_description }}</p>
+                        <a href="{{ .RelPermalink }}" class="btn btn--primary">View Job Listing</a>
+                    </details>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
     {{ if .Params.testimonials }}
         {{ partial "testimonials" . }}
     {{ end }}

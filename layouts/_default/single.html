@@ -1,8 +1,19 @@
 {{ define "main" }}
     {{ partial "hero" .  }}
-    <div class="wrapper padding-top-6 padding-bottom-6">
-        {{ .Content  }}
+    {{ if .Content  }}
+    <div class="block">
+        <div class="wrapper">
+            {{ .Content  }}
+        </div>
     </div>
+    {{ end }}
     {{ partial "full-width-feature" . }}
+    {{ if eq .Title "Apply Now" }}
+        <div class="block">
+            <div class="wrapper">
+                {{ partial "forms/application-form" . }}
+            </div>
+        </div>
+    {{ end }}
     {{ partial "cta" . }}
 {{ end }}

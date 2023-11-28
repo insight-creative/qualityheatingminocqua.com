@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+<div class="block">
+    <div class="wrapper flow">
+        {{ .Content  }}
+    </div>
+</div>
+{{ partial "post-navigation" . }}
+{{ partial "cta" . }}
+{{ end }}

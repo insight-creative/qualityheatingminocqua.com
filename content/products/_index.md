@@ -30,5 +30,5 @@ hero_image:
 
 intro:
   heading: Browse HVAC Systems and Products
-  copy: "Quality Heating is proud to carry a top-quality line of Carrier products, ranging from air conditioners and furnaces and even humidifiers and controls. Browse our selection of products below or call us for more information."
+  copy: "Quality Heating is proud to carry a top-quality line of Carrier products, ranging from air conditioners and furnaces to humidifiers and controls. Browse our selection of products below or call us for more information."
 ---

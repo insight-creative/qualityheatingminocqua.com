@@ -1,8 +1,8 @@
 {{ if eq .Title "Home" }}
-<div class="hero hero--home w-100">
+<section class="hero hero--home w-100" aria-labelledby="hero-heading">
   <div class="hero__content w-100-m wrapper-lg flex flex-column flex-row-m flex-center">
     <div class="w-100 w-60-m flow text-color-white">
-      <h1 class="no-margin">{{ .Params.hero.heading }}</h1>
+      <h1 class="no-margin" id="hero-heading">{{ .Params.hero.heading }}</h1>
       <p class="hero__body">{{ .Params.hero.body }}</p>
       <div class="hero__carrier-logo">
         <img src="/uploads/carrier-logo-white-tag.png" alt="Carrier Logo" width="300" height="100">
@@ -14,7 +14,7 @@
   <div class="hero__service-request w-100 w-40-m">
     {{ partial "request-service" . }}
   </div>
-</div>
+</section>
 {{ else }}
 {{ $heroClass := lower .Page.Title }}
 <div class="hero hero--{{ anchorize $heroClass }}">
