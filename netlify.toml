@@ -1,33 +1,45 @@
 [context.production.environment]
-  HUGO_VERSION = "0.83.1"
+  HUGO_VERSION = "0.118.2"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.83.1"
+  HUGO_VERSION = "0.118.2"
 
 [build]
   command = "hugo"
   publish = "public"
 
 [[redirects]]
-  from = "/the-economy-of-comfort"
-  to = "/services/ductless-split-systems/"
-
-[[redirects]]
-  from = "/residential-heating"
-  to = "/services/residential-heating/"
-
-[[redirects]]
-  from = "/residential-cooling"
-  to = "/services/residential-coolingv/"
-
-[[redirects]]
-  from = "/indoor-air-quality-services"
-  to = "/services/indoor-air-quality-services/"
-
-[[redirects]]
-  from = "/reviews"
+  from = "/specials"
   to = "/"
 
 [[redirects]]
-  from = "/about-us"
-  to = "/about/"
+  from = "/air-conditioners"
+  to = "/products/air-conditioners/"
+
+[[redirects]]
+  from = "/furnaces"
+  to = "/products/furnaces/"
+
+[[redirects]]
+  from = "/heat-pumps"
+  to = "/products/heat-pumps/"
+
+[[redirects]]
+  from = "/ductless-systems"
+  to = "/products/ductless-systems/"
+
+[[redirects]]
+  from = "/indoor-air-quality"
+  to = "/products/indoor-air-quality/"
+
+[[redirects]]
+  from = "/thermostats"
+  to = "/products/smart-thermostats/"
+
+[[redirects]]
+  from = "/boilers"
+  to = "/products/boilers/"
+
+[[redirects]]
+  from = "/water-heaters"
+  to = "/products/ductless-systems/"
