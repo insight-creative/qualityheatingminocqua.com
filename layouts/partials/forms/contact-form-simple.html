@@ -1,0 +1,31 @@
+<form class="contact-form" method="post" name="Contact Quality Heating" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/thank-you/">
+    <span class="h5 text-primary b">Request Service</span>
+    <div hidden>
+        <label>
+          Don’t fill this out if you're human: 
+          <input name="bot-field" />
+        </label>
+    </div>
+    <div class="visually-hidden">
+        <label for="_subject">New form submission from Quality Heating, Inc. contact form</label>
+        <input aria-label="subject" id="_subject" name="_subject"/>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="name">Name *</label>
+        <input name="Name" id="name" type="text" class="contact-form__form-control" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="phone">Phone *</label>
+        <input name="Phone" id="phone" type="tel" class="contact-form__form-control" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="email">Email *</label>
+        <input name="email" id="email" type="email" class="contact-form__form-control" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="message">Message *</label>
+        <textarea name="Message" id="message" class="contact-form__form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="contact-form__btn btn btn--primary">Send
+        Request {{ partial "svg-icons/arrow-right.svg" . }}</button>
+</form>
