@@ -2,10 +2,16 @@
     <div class="contact-form">
         <span class="h5 text-primary b">Request Service</span>
         <div class="contact-form__wrapper">
-            <form name="contact" action="/thank-you/" method="POST" data-netlify="true">
+            <form name="Request Service" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
+                <div hidden>
+                    <label>
+                      Don’t fill this out if you're human: 
+                      <input name="bot-field" />
+                    </label>
+                </div>
                 <div class="visually-hidden">
-                    <label for="subject">New form submission from the greiberheating.com contact form</label>
-                    <input aria-label="subject" id="subject" name="subject" value="New form submission from the greiberheating.com contact form" />
+                    <label for="_subject">New form submission from Quality Heating, Inc. contact form</label>
+                    <input aria-label="subject" id="_subject" name="_subject"/>
                 </div>
                 <div class="contact-form__form-group">
                     <label for="name">Name*</label>

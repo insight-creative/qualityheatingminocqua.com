@@ -1,4 +1,4 @@
-<form class="contact-form" method="post" name="Contact Quality Heating" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/thank-you/">
+<form name="Contact Quality Heating" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
     <div hidden>
         <label>
           Don’t fill this out if you're human: 
@@ -7,7 +7,7 @@
     </div>
     <div class="visually-hidden">
         <label for="_subject">New form submission from Quality Heating, Inc. contact form</label>
-        <input aria-label="subject" id="_subject" name="_subject" value="New form submission from Quality Heating, Inc. contact form"/>
+        <input aria-label="subject" id="_subject" name="_subject"/>
     </div>
     <div class="contact-form__form-row">
         <div class="contact-form__row-wrapper">
@@ -46,5 +46,5 @@
         <textarea name="Message" id="message" class="contact-form__form-control" rows="4" required></textarea>
     </div>
     <br>
-    <button type="submit" class="contact-form__btn btn btn--primary">Send Message</button>
+    <button type="submit" class="contact-form__btn btn btn--primary">Send Message {{ partial "svg-icons/arrow-right.svg" . }}</button>
 </form>
