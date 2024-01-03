@@ -46,5 +46,17 @@
         <textarea name="Message" id="message" class="contact-form__form-control" rows="4" required></textarea>
     </div>
     <br>
-    <button type="submit" class="contact-form__btn btn btn--primary">Send Message {{ partial "svg-icons/arrow-right.svg" . }}</button>
+    <div class="contact-form__form-group">                    
+        <div class="contact-form__form-row">
+            <div class="contact-form__row-wrapper">
+                <div class="contact-form__form-group">
+                    <button type="submit" class="contact-form__btn btn btn--primary">Send
+                        Request {{ partial "svg-icons/arrow-right.svg" . }}</button>
+                </div>
+                <div class="contact-form__form-group">
+                    <p class="font-size-x">Need emergency service? Call now <a class="" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc.">{{ .Site.Params.phone }}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
