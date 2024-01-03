@@ -1,6 +1,6 @@
 <div class="contact-form-wrapper">
     <div class="contact-form">
-        <span class="h5 text-primary b">Request Service</span>
+        <span class="h5 text-primary b">Request Non-Emergency Service</span>
         <div class="contact-form__wrapper">
             <form name="Request Service" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
                 <div hidden>
@@ -29,8 +29,19 @@
                     <label for="message">Message*</label>
                     <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="contact-form__btn btn btn--primary">Send
-                    Request {{ partial "svg-icons/arrow-right.svg" . }}</button>
+                <div class="contact-form__form-group">                    
+                    <div class="contact-form__form-row">
+                        <div class="contact-form__row-wrapper">
+                            <div class="contact-form__form-group">
+                                <button type="submit" class="contact-form__btn btn btn--primary">Send
+                                    Request {{ partial "svg-icons/arrow-right.svg" . }}</button>
+                            </div>
+                            <div class="contact-form__form-group">
+                                <p class="font-size-xs">Need emergency service? Call now <a class="" href="tel:{{ .Site.Params.phone }}" aria-label="Call Quality Heating, Inc.">{{ .Site.Params.phone }}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
