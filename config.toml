@@ -16,7 +16,7 @@ summaryLength = 30
   address_line_1 = "9752 West Lake Avenue"
   address_line_2 = "Minocqua, WI 54548"
   google_map_directions = "https://maps.app.goo.gl/CVhd4GvP2so3BCA49"
-  hours = "Mon-Fri: 8:00am - 5:00pm"
+  hours = "Mon-Fri: 8:00am - 4:00pm"
   # Google Analitycs
   minifyBundles = true
 
