@@ -1,8 +1,5 @@
 ---
 title: Products
-menu:
-  main:
-    weight: 2
 seo:
   page_title: Heating and Cooling Products in Minocqua, WI
   meta_description: Learn more about the many excellent Carrier products our Minocqua, WI AC and heating technicians service and install. Call us now!

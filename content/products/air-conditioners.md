@@ -1,14 +1,10 @@
 ---
 title: Air Conditioners
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Air Conditioners in Minocqua, WI
   meta_description: Explore all Carrier Residential central air conditioning units to find the perfect solution for your home. Choose your model and contact us today.
   featured_image: /infinity-19vs-central-air-conditioner-24VNA9-no-energy-star_jizrek.png
   featured_image_alt: Carrier infinity 19VS central air conditioner
-weight: 1
 Product:
   productLine:
     - name: Infinity System

@@ -1,14 +1,10 @@
 ---
 title: Ductless Systems
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Ductless Systems in Minocqua, WI
   meta_description: Because they don't need ducts inside your walls to reach your rooms, ductless air conditioners work wherever you need them.
   featured_image: /infinity-heat-pump-with-basepan-heater-38MPRA_czfghq.png
   featured_image_alt: Carrier inifinity heat pump with basepan heater
-weight: 4
 Product:
   productLine:
     - name: Performance Series

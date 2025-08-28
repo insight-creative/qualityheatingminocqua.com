@@ -1,14 +1,10 @@
 ---
 title: Furnaces
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Furnaces in Minocqua, WI
   meta_description: Our quiet, energy-efficient furnaces are designed to provide warmth in winter and to circulate clean and refreshing air. Find a furnace today.
   featured_image: /performance-96-gas-furnace-59TP6_s1zuls.png
   featured_image_alt: Carrier performance 96 gas furnace
-weight: 2
 Product:
   productLine:
     - name: Infinity System

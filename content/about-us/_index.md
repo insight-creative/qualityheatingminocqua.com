@@ -1,8 +1,5 @@
 ---
 title: About
-menu:
-  main:
-    weight: 3
 seo:
   page_title: Heating and Cooling Company in Minocqua, WI
   meta_description: Learn more about the HVAC professionals at Quality Heating, Inc. Our team is ready to help you - call us today to schedule an appointment!

@@ -5,7 +5,6 @@ seo:
   meta_description: A whole house humidifier ensures your comfort when humidity levels are low by adding moisture to the air.
   featured_image: /performance-fan-powered-humidifier-HUMXXLFP_nggbxf.png
   featured_image_alt: Performance fan powered humidifier
-weight: 4
 Product:
   productLine:
     - name: Performance™ Series Fan-Powered Humidifier

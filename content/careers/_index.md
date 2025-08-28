@@ -1,8 +1,5 @@
 ---
 title: Careers
-menu:
-  main:
-    weight: 4
 seo:
   page_title: HVAC Careers in Minocqua, WI
   meta_description: Learn more about the HVAC professionals at Quality Heating, Inc. Our team is ready to help you - call us today to schedule an appointment!

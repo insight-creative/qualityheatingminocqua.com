@@ -1,14 +1,10 @@
 ---
 title: Boilers
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Boilers in Minocqua, WI
   meta_description: In homes with radiant heat, our gas- and oil-fired boilers efficiently power your system and spread warmth. Find a boiler today.
   featured_image: /hc-series_zt7dh0.png
   featured_image_alt: IBC HC series boilers
-weight: 6
 Product:
   productLine:
     - name: 

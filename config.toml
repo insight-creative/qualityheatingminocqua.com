@@ -50,3 +50,61 @@ summaryLength = 30
 
 [markup.goldmark.renderer]
   unsafe= true
+
+[[menu.main]]
+  name = "Services"
+  url = "/services/"
+  weight = 1
+
+[[menu.main]]
+  name = "Products"
+  url = "/products/"
+  weight = 2
+
+[[menu.main]]
+  name = "Air Conditioners"
+  url = "/products/air-conditioners/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Furnaces"
+  url = "/products/furnaces/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Heat Pumps"
+  url = "/products/heat-pumps/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Ductless Systems"
+  url = "/products/ductless-systems/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Smart Thermostats"
+  url = "/products/smart-thermostats/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Boilers"
+  url = "/products/boilers/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "Indoor Air Quality"
+  url = "/products/indoor-air-quality/"
+  parent = "Products"
+
+[[menu.main]]
+  name = "About"
+  url = "/about-us/"
+  weight = 3
+
+[[menu.main]]
+  name = "Careers"
+  url = "https://qualityheatinginc.prevueaps.com/"
+  weight = 4
+
+  [menu.main.params]
+    external = true

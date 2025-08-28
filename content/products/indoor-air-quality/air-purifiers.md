@@ -5,7 +5,6 @@ seo:
   meta_description: Because your indoor air can be more polluted than you imagine, a whole house air purifier is a key component to keep your air cleaner
   featured_image: /infinity-air-purifier-DCAPA_nbsvg2.png
   featured_image_alt: Carrier Air Purifiers
-weight: 4
 Product:
   productLine:
     - name: Infinity® Series

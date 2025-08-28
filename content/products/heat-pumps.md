@@ -1,14 +1,10 @@
 ---
 title: Heat Pumps
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Heat Pumps in Minocqua, WI
   meta_description: Heat pump systems provide versatile heating, cooling, and humidity control. Explore all Carrier Residential heat pumps to find yours.
   featured_image: /infinity-15-heat-pump-25HNB5_pcahu5.png
   featured_image_alt: Carrier infinity 15 heat pump
-weight: 3
 Product:
   productLine:
     - name: Infinity System

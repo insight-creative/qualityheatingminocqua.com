@@ -1,14 +1,10 @@
 ---
 title: Smart Thermostats
-menu:
-  main:
-    parent: Products
 seo:
   page_title: Smart Thermostats in Minocqua, WI
   meta_description: Smart thermostats give you easy-to-use control of your home comfort anytime. Learn more about Carrier smart thermostats
   featured_image: /carrier-3Lite-front-view_gqmgos.png
   featured_image_alt: Carrier 3Lite smart thermostat
-weight: 4
 Product:
   productLine:
     - name: Infinity System

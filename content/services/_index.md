@@ -1,8 +1,5 @@
 ---
 title: Services
-menu:
-  main:
-    weight: 1
 seo:
   page_title: Heating and Cooling Repair Services in Minocqua, WI
   meta_description: Whether it's routine maintenance or emergency repairs, our team of certified HVAC professionals is dedicated to ensuring comfort in your home all year round. Call us today!
